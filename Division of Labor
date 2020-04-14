@@ -1,6 +1,15 @@
 This will be the file where each member describes what they will do/have done in this project.
 Alexis Gilliam: R Coding
 Miranda Plaster: Data Contribution, Mathematica Coding
+Data-
+equation used: d=mλ*(x/y)
+m= {1, 2, 3, 4}
+λ= 0.65um (650nm)
+x= 100cm
+y= {1.5cm, 2.5cm, 3.8cm, 4.8cm} 
+d= {43.33um, 52um, 51.3um, 54.16um} 
+Average diameter= 50.2um
+
 Nick Sitter: Python Coding
 Kayla Tumbaga: Data Contribution
 Gavin Yoesting:
