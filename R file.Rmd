@@ -1,0 +1,13 @@
+---
+title: "Attempting R"
+author: "Alexis Gilliam"
+date: "April 15, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is where I'm going to make a program to analyze data from said experiment. Using R coding. yay. 
+
