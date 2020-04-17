@@ -18,3 +18,15 @@ Fringe   Diameter(um) Wavelength(nm)   Distance(cm)
 4        84.78        650              9.2
 average  85.62        650              N/A")    
 ```
+
+```{r calculations}
+averagediameter <- read.table(header=TRUE, text="
+Group     Average_Diameter(um)   Color
+1           196.78               brown
+2           96.4                 blonde
+3           161.76               brown
+4           85.62                brown
+5           30.58                red
+6           122.8                red")
+```
+Table 2. The Average Diameter of Hair for Multiple Groups
