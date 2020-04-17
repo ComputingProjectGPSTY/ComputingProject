@@ -13,3 +13,15 @@ Average diameter= 50.2um
 Nick Sitter: Python Coding
 Kayla Tumbaga: Data Contribution, contrasting the three data analysis languages
 Gavin Yoesting:Constrasting between data analysis languages
+
+#Gavin's Division of Labor
+I have submitted my diffraction lab data to be analyzed by the three program: R, Mathematica, and Python. Once each program has a running code, I will be contrasting the data analysis languages. I will also be comparing how accessible and user friendly each program is with the given data.
+
+#Gavin's Data
+Gavin's Diffraction Lab
+fringe     distance (cm)    diameter (nm)
+1          2                975000.0
+2          4.5              86666.7
+3          6.5              90000.0
+4          8.5              91764.7
+average diameter: 91482.85 nm
