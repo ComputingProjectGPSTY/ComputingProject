@@ -19,6 +19,18 @@ distance (y) = {1.5cm, 2.5cm, 3.8cm, 4.8cm}
 diameter = {43.33um, 52um, 51.3um, 54.16um} 
 Average diameter= 50.2um
 
+ Data 3:
+ 
+```{r calculations}
+diffractiondata <- read.table(header=TRUE, text="
+Fringe   Diameter(um) Wavelength(nm)   Distance(cm)   
+1        88.64        650              2.2
+2        86.67        650              4.5
+3        82.39        650              7.1
+4        84.78        650              9.2
+average  85.62        650              N/A")    
+```
+
 # Other things to consider
   Per email, we should gather more data and then use our programs to analyze things from the data like averages or ranges
   Alexis will be on the look out for a laser pointer to run the experiment using family members as subjects, adding about 6 more sets of data to work with. In the meantime we can continue working on our codes to eventually run and analyze the data and eventually the codes themselves. 
