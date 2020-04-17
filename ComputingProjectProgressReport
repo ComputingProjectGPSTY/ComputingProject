@@ -11,6 +11,14 @@ output: html_notebook
           Equation being used is d = m(wavelength)*(x/y)
         Where y= 1.5cm, 2.5cm, 3.8cm, and 4.8cm; wavelength = 650nm; x = 100 cm.
 
+   Data 2:
+Fringe (m) = {1, 2, 3, 4}
+λ = 0.65um (650nm)
+x = 100cm
+distance (y) = {1.5cm, 2.5cm, 3.8cm, 4.8cm} 
+diameter = {43.33um, 52um, 51.3um, 54.16um} 
+Average diameter= 50.2um
+
 # Other things to consider
   Per email, we should gather more data and then use our programs to analyze things from the data like averages or ranges
   Alexis will be on the look out for a laser pointer to run the experiment using family members as subjects, adding about 6 more sets of data to work with. In the meantime we can continue working on our codes to eventually run and analyze the data and eventually the codes themselves. 
