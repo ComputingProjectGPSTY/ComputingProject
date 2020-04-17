@@ -9,3 +9,12 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r calculations}
+diffractiondata <- read.table(header=TRUE, text="
+Fringe   Diameter(um) Wavelength(nm)   Distance(cm)   
+1        88.64        650              2.2
+2        86.67        650              4.5
+3        82.39        650              7.1
+4        84.78        650              9.2
+average  85.62        650              N/A")    
+```
