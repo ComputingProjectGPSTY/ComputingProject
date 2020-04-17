@@ -1,0 +1,18 @@
+---
+title: "Project Progress Report"
+output: html_notebook
+---
+
+   Goal: To write three programs inorder to analyze the data from a pending experiment, using R, Python and Mathematica. Then, contrast the three languages for data analysis.
+   
+   Resources: Exploring Diffraction; General Chemistry Experiment 
+   
+   Data: 
+          Equation being used is d = m(wavelength)*(x/y)
+        Where y= 1.5cm, 2.5cm, 3.8cm, and 4.8cm; wavelength = 650nm; x = 100 cm.
+
+# Other things to consider
+  Per email, we should gather more data and then use our programs to analyze things from the data like averages or ranges
+  Alexis will be on the look out for a laser pointer to run the experiment using family members as subjects, adding about 6 more sets of data to work with. In the meantime we can continue working on our codes to eventually run and analyze the data and eventually the codes themselves. 
+  
+  Also see division of labor for further breakdown of responsibilities.
