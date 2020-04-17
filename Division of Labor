@@ -1,11 +1,6 @@
 This will be the file where each member describes what they will do/have done in this project.
 Alexis Gilliam: R Coding, email for help
 Miranda Plaster: Data Contribution, Mathematica Coding
-<<<<<<< HEAD
-Nick Sitter: Python Coding
-Kayla Tumbaga: Data Contribution,contrasting data analysis languages
-Gavin Yoesting:
-=======
 Data-
 equation used: d=mλ*(x/y)
 Fringe (m) = {1, 2, 3, 4}
@@ -30,4 +25,3 @@ fringe     distance (cm)    diameter (nm)
 3          6.5              90000.0
 4          8.5              91764.7
 average diameter: 91482.85 nm
->>>>>>> fdb98d8f8131e70aedb3f3f74786161cf3e27797
