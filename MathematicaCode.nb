@@ -1,0 +1,1165 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["Plots",
+FontSize -> 24],FontColor -> RGBColor[0.9333333333333333`,0.13725490196078433`,0.043137254901960784`]],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[StyleBox[" ",FontSize -> 24],FontColor -> RGBColor[
+0.9333333333333333`,0.13725490196078433`,0.043137254901960784`]],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[StyleBox["of",FontSize -> 24],FontColor -> RGBColor[0.9333333333333333`,
+0.13725490196078433`,0.043137254901960784`]],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[StyleBox[" ",FontSize -> 24],FontColor -> RGBColor[0.9333333333333333`,0.13725490196078433`,
+0.043137254901960784`]],FontFamily -> "Times New Roman"],StyleBox[StyleBox[StyleBox[
+"the",FontSize -> 24],FontColor -> RGBColor[0.9333333333333333`,0.13725490196078433`,
+0.043137254901960784`]],FontFamily -> "Times New Roman"],StyleBox[StyleBox[StyleBox[
+" ",FontSize -> 24],FontColor -> RGBColor[0.9333333333333333`,0.13725490196078433`,
+0.043137254901960784`]],FontFamily -> "Times New Roman"],StyleBox[StyleBox[StyleBox[
+"Data",FontSize -> 24],FontColor -> RGBColor[0.9333333333333333`,0.13725490196078433`,
+0.043137254901960784`]],FontFamily -> "Times New Roman"]}],"Section",ExpressionUUID -> "28a2cd9c-e485-47b8-957d-f6898dfa5c48"],Cell[
+TextData[
+{StyleBox[RowBox[{" "," "," "}]],StyleBox[StyleBox["The",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox["x",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["and",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox["y",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["coordinates",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["were",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["chosen",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["randomly",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["simply",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["to",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["test",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["the",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["programs",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["graphing",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["ability",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[RowBox[{StyleBox[StyleBox[
+".",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14]}]],StyleBox[RowBox[{StyleBox[StyleBox["T",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["he",FontFamily -> "Times New Roman"],FontSize -> 14]}]],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["variables",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["used",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["to",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["create",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["the",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["plot",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["are",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["the",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["diameter",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["and",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["distance",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["column",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["shown",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["in",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["the",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["Diffraction_Data",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox[".",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox["Rmd",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[
+" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["file",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox["in",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[
+" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["the",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox["following",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[
+" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["repository",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["https://github.com/Computing",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox["ProjectGPSTY",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox["/",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox["ComputingProject",
+FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[".",FontFamily -> "Times New Roman"],
+FontSize -> 14],StyleBox[StyleBox["git",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+RowBox[{StyleBox[StyleBox[".",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 14],StyleBox[StyleBox[" ",
+FontFamily -> "Times New Roman"],FontSize -> 14]}]],"\n",StyleBox[RowBox[{"\[NonBreakingSpace]","\[NonBreakingSpace]","\[NonBreakingSpace]"}]]}],
+"Text",ExpressionUUID -> "46c1ceef-3940-41a5-ba41-5a5b3f90a09d"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{"ListPlot","[",RowBox[{RowBox[{"{",RowBox[{RowBox[
+{"{",RowBox[{"2.2",",","88.64"}],"}"}],","," ",RowBox[{"{",RowBox[{"2",",","97.5"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"1.5",",","43.33"}],"}"}],","," ",RowBox[{"{",RowBox[{"1",",","58.56"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"4.5",",","86.67"}],"}"}],","," ",RowBox[{"{",RowBox[{"4.5",",","86.65"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"2.5",",","52"}],"}"}],","," ",RowBox[{"{",RowBox[{"2",",","58.56"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"7.1",",","82.39"}],"}"}],","," ",RowBox[{"{",RowBox[{"6.5",",","90"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"3.8",",","51.3"}],"}"}],","," ",RowBox[{"{",RowBox[{"2.2",",","79.85"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"9.2",",","84.78"}],"}"}],","," ",RowBox[{"{",RowBox[{"8.5",",","91.76"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"4.8",",","54.16"}],"}"}],","," ",RowBox[{"{",RowBox[{"2.8",",","83.65"}],"}"}]}],"}"}],",",RowBox[
+{"AxesLabel"," ","\[Rule]"," ",RowBox[{"{",RowBox[{RowBox[{"Distance","[","cm","]"}],","," ",RowBox[
+{"Diameter","[","cm","]"}]}],"}"}]}],","," ","\n"," ",RowBox[{"LabelStyle"," ","\[Rule]"," ",RowBox[
+{"Directive","[",RowBox[{"Black",","," ","Bold"}],"]"}]}]}],"]"}]," "}]],"Input",
+ExpressionUUID -> "922c583d-daca-498d-942f-2454273f6e49",CellLabel -> "In[10]:= "],Cell[
+BoxData[
+GraphicsBox[{{},{{{Directive[PointSize[0.012833333333333334],RGBColor[0.368417,0.506779,
+0.709798],AbsoluteThickness[1.6]],PointBox[CompressedData["1:eJxTTMoPSmViYGAQAGIQPWsmCDA6aMb0H/qqEebAAAEQOiECyv9hz3V9cYHtKlco/4O9x8MqkXXuvlC+kEM1kPdwVSicDzZ3JYzPAqW94ObD9KeBgQzE/hkhUHkpCN0QBpXng9DLPB1g7gXzvwVD5ZUcgnbItb42hNmn6FBoC3TxhzAHYzAQdgA5r0rEG6qeDWLOyxAHAMmFS3A="]]}},{{Directive[
+PointSize[0.012833333333333334],RGBColor[0.368417,0.506779,0.709798],AbsoluteThickness[
+1.6]]},{}},{{Directive[PointSize[0.012833333333333334],RGBColor[0.368417,0.506779,
+0.709798],AbsoluteThickness[1.6]]},{}}},{{},{}}},DisplayFunction -> Identity,DisplayFunction -> Identity,
+AspectRatio -> NCache[Power[GoldenRatio,-1],0.6180339887498948],Axes -> {True,True},
+AxesLabel -> {FormBox[RowBox[{"Distance","(","cm",")"}],TraditionalForm],FormBox[
+RowBox[{"Diameter","(","cm",")"}],TraditionalForm]},AxesOrigin -> {0,0},RuleDelayed[
+DisplayFunction,Identity],Frame -> {{False,False},{False,False}},FrameLabel -> {{None,None},{None,None}},
+FrameTicks -> {{Automatic,Automatic},{Automatic,Automatic}},GridLines -> {None,None},
+GridLinesStyle -> Directive[GrayLevel[0.5,0.4]],LabelStyle -> Directive[GrayLevel[
+0],Bold],Method -> CompressedData["1:eJzNUD0LwjAUjB+Dm4Pg7m+pCIJiaYt7NC/wMOaF5GWov96kaIvQSReX4y539ziyuVClZ0KIME9wwMB6+lZVNFCvEjk5xjs+oDTER+lv4EMXaHyE3+LrRAoir9BKhtAQmdwmG4bgyKhlIlsMzsh2F+01F/QkJxYJ+pfPC72/V2AZuR38UvqXn1WdZmNWHXzTy4GRfynIIaizNBH+dfUT3rB0HA=="],
+PlotRange -> {{0,9.2},{0,97.5}},PlotRangeClipping -> True,PlotRangePadding -> {{Scaled[
+0.02],Scaled[0.02]},{Scaled[0.02],Scaled[0.05]}},Ticks -> {Automatic,Automatic},ExpressionUUID -> "98092513-33e5-4401-b827-6863dd19dd0b"],
+StandardForm],"Output",ExpressionUUID -> "fdea6d2f-0257-4523-b9db-1dd0e0face04",CellLabel -> "Out[10]= "]},
+Open],ExpressionUUID -> "8fd883f8-5282-415b-ba53-ca97fbcf8a37"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{"ListLinePlot","[",RowBox[{RowBox[{"{",RowBox[{RowBox[
+{"{",RowBox[{"2.2",",","88.64"}],"}"}],","," ",RowBox[{"{",RowBox[{"2",",","97.5"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"1.5",",","43.33"}],"}"}],","," ",RowBox[{"{",RowBox[{"1",",","58.56"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"4.5",",","86.67"}],"}"}],","," ",RowBox[{"{",RowBox[{"4.5",",","86.65"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"2.5",",","52"}],"}"}],","," ",RowBox[{"{",RowBox[{"2",",","58.56"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"7.1",",","82.39"}],"}"}],","," ",RowBox[{"{",RowBox[{"6.5",",","90"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"3.8",",","51.3"}],"}"}],","," ",RowBox[{"{",RowBox[{"2.2",",","79.85"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"9.2",",","84.78"}],"}"}],","," ",RowBox[{"{",RowBox[{"8.5",",","91.76"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"4.8",",","54.16"}],"}"}],","," ",RowBox[{"{",RowBox[{"2.8",",","83.65"}],"}"}]}],"}"}],",",RowBox[
+{"AxesLabel"," ","\[Rule]"," ",RowBox[{"{",RowBox[{RowBox[{"Distance","[","cm","]"}],","," ",RowBox[
+{"Diameter","[","cm","]"}]}],"}"}]}],","," ","\n"," ",RowBox[{"LabelStyle"," ","\[Rule]"," ",RowBox[
+{"Directive","[",RowBox[{"Black",","," ","Bold"}],"]"}]}]}],"]"}],"  "}]],"Input",
+ExpressionUUID -> "b6da8115-4df8-4b7c-9e8d-b7832be5593a",NumberMarks -> False,CellLabel -> "In[14]:= "],Cell[
+BoxData[
+GraphicsBox[{{},{{{},{},{Hue[0.67,0.6,0.6],Directive[PointSize[NCache[Rational[7,
+360],0.019444444444444445]],RGBColor[0.368417,0.506779,0.709798],AbsoluteThickness[
+1.6]],LineBox[CompressedData["1:eJxTTMoPSmViYGAQAGIQPWsmCDA6aMb0H/qqEebAAAEQOiECyv9hz3V9cYHtKlco/4O9x8MqkXXuvlC+kEM1kPdwVSicDzZ3JYzPAqW94ObD9KeBgQzE/hkhUHkpCN0QBpXng9DLPB1g7gXzvwVD5ZUcgnbItb42hNmn6FBoC3TxhzAHYzAQdgA5r0rEG6qeDWLOyxAHAMmFS3A="]]}},{{Directive[
+PointSize[NCache[Rational[7,360],0.019444444444444445]],RGBColor[0.368417,0.506779,
+0.709798],AbsoluteThickness[1.6]]}},{{Directive[PointSize[NCache[Rational[7,360],
+0.019444444444444445]],RGBColor[0.368417,0.506779,0.709798],AbsoluteThickness[1.6]]},{}},{{Directive[
+PointSize[NCache[Rational[7,360],0.019444444444444445]],RGBColor[0.368417,0.506779,
+0.709798],AbsoluteThickness[1.6]]},{}}},{{},{}}},DisplayFunction -> Identity,DisplayFunction -> Identity,
+AspectRatio -> NCache[Power[GoldenRatio,-1],0.6180339887498948],Axes -> {True,True},
+AxesLabel -> {FormBox[RowBox[{"Distance","(","cm",")"}],TraditionalForm],FormBox[
+RowBox[{"Diameter","(","cm",")"}],TraditionalForm]},AxesOrigin -> {0,0},RuleDelayed[
+DisplayFunction,Identity],Frame -> {{False,False},{False,False}},FrameLabel -> {{None,None},{None,None}},
+FrameTicks -> {{Automatic,Automatic},{Automatic,Automatic}},GridLines -> {None,None},
+GridLinesStyle -> Directive[GrayLevel[0.5,0.4]],LabelStyle -> Directive[GrayLevel[
+0],Bold],Method -> CompressedData["1:eJzNUD0LwjAUjB+Dm4Pg7m+pCIJiaYt7NC/wMOaF5GWov96kaIvQSReX4y539ziyuVClZ0KIME9wwMB6+lZVNFCvEjk5xjs+oDTER+lv4EMXaHyE3+LrRAoir9BKhtAQmdwmG4bgyKhlIlsMzsh2F+01F/QkJxYJ+pfPC72/V2AZuR38UvqXn1WdZmNWHXzTy4GRfynIIaizNBH+dfUT3rB0HA=="],
+PlotRange -> {{0,9.2},{0,97.5}},PlotRangeClipping -> True,PlotRangePadding -> {{Scaled[
+0.02],Scaled[0.02]},{Scaled[0.02],Scaled[0.05]}},Ticks -> {Automatic,Automatic},ExpressionUUID -> "65ce8bd2-75dc-4a69-b968-7cdd1b08d114"],
+StandardForm],"Output",ExpressionUUID -> "e9101b3e-4756-4b98-aafe-be163c3284bb",CellLabel -> "Out[14]= "]},
+Open],ExpressionUUID -> "b5fa256d-a264-498c-94d3-fefecb235f4a"],Cell[
+TextData[{StyleBox[
+StyleBox["The",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["Line",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["is",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["added",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["to",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["plot",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["through",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["function",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["ListLinePlot",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[RowBox[{StyleBox[StyleBox["[{}]",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"]}]],StyleBox[
+StyleBox["instead",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["of",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["simply",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["ListPlot",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[RowBox[{StyleBox[StyleBox[
+" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["[{}]",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"]}]],StyleBox[
+StyleBox["which",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["creates",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["scattered",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["plot",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["seen",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["origionally",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[RowBox[{StyleBox[StyleBox[".",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"]}]]}],
+"Text",ExpressionUUID -> "a35cad75-fd44-486b-8965-ad78f80d7b1f"]},Open],ExpressionUUID -> "e949c936-69b8-4ff0-bcff-447cb548b833"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["Dataset",FontColor -> RGBColor[0.9529411764705882`,
+0.0784313725490196`,0.047058823529411764`]],FontSize -> 24],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[StyleBox["/",FontColor -> RGBColor[0.9529411764705882`,0.0784313725490196`,
+0.047058823529411764`]],FontSize -> 24],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[StyleBox["Table",FontColor -> RGBColor[0.9529411764705882`,0.0784313725490196`,
+0.047058823529411764`]],FontSize -> 24],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[StyleBox[" ",FontColor -> RGBColor[0.9529411764705882`,0.0784313725490196`,
+0.047058823529411764`]],FontSize -> 24],FontFamily -> "Times New Roman"]}],"Section",
+ExpressionUUID -> "59fdaade-c562-494d-85d6-26924af861b4"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{"data","="," ",RowBox[{"Dataset","[",RowBox[{"<|",RowBox[{RowBox[{"\"1\""," ","\[Rule]"," ",RowBox[
+{"<|",RowBox[{RowBox[{"\"a\""," ","\[Rule]","88.64"}],",",RowBox[{"\"b\""," ","\[Rule]"," ","97.5"}],",",RowBox[
+{"\"c\""," ","\[Rule]"," ","43.33"}],","," ",RowBox[{"\"d\""," ","\[Rule]","58.56"}]}],"|>"}]}],",",RowBox[
+{"\"2\""," ","\[Rule]"," ",RowBox[{"<|",RowBox[{RowBox[{"\"a\""," ","\[Rule]","86.67"}],","," ",RowBox[
+{"\"b\""," ","\[Rule]","86.65"}],","," ",RowBox[{"\"c\""," ","\[Rule]","52"}],","," ",RowBox[
+{"\"d\""," ","\[Rule]","58.56"}]}],"|>"}]}],",",RowBox[{"\"3\""," ","\[Rule]"," ",RowBox[
+{"<|",RowBox[{RowBox[{"\"a\""," ","\[Rule]","82.39"}],",",RowBox[{"\"b\""," ","\[Rule]"," ","90"}],",",RowBox[
+{"\"c\""," ","\[Rule]"," ","51.5"}],","," ",RowBox[{"\"d\""," ","\[Rule]","79.85"}]}],"|>"}]}],","," ",RowBox[
+{"\"4\""," ","\[Rule]"," ",RowBox[{"<|",RowBox[{RowBox[{"\"a\""," ","\[Rule]","84.78"}],","," ",RowBox[
+{"\"b\""," ","\[Rule]","91.76"}],","," ",RowBox[{"\"c\""," ","\[Rule]","54.16"}],","," ",RowBox[
+{"\"d\""," ","\[Rule]","83.65"}]}],"|>"}]}]}],"|>"}],"]"}]," "}]],"Input",ExpressionUUID -> "e9881cdb-af39-4b31-bfcd-bfd423974b4d",
+CellLabel -> "In[1]:= "],Cell[
+BoxData[TagBox[TagBox[DynamicModuleBox[{Set[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+Association["InitialData" -> Association["1" -> Association["a" -> 88.64,"b" -> 97.5,
+"c" -> 43.33,"d" -> 58.56],"2" -> Association["a" -> 86.67,"b" -> 86.65,"c" -> 52,
+"d" -> 58.56],"3" -> Association["a" -> 82.39,"b" -> 90,"c" -> 51.5,"d" -> 79.85],
+"4" -> Association["a" -> 84.78,"b" -> 91.76,"c" -> 54.16,"d" -> 83.65]],"InitialShape" -> TypeSystem`PackageScope`HeaderShape[
+Association[{All,TypeSystem`PackageScope`KeyDummy[0]} -> 1,{All,"a"} -> 1,{All,"b"} -> 1,
+{All,"c"} -> 1,{All,"d"} -> 1],TypeSystem`PackageScope`Limited[TypeSystem`PackageScope`ColumnShape[
+TypeSystem`PackageScope`KeyValueShape[TypeSystem`PackageScope`AtomShape[28.800000000000004],
+TypeSystem`PackageScope`Limited[TypeSystem`PackageScope`RowShape[Association["a" -> TypeSystem`PackageScope`AtomShape[
+60],"b" -> TypeSystem`PackageScope`AtomShape[60],"c" -> TypeSystem`PackageScope`AtomShape[
+60],"d" -> TypeSystem`PackageScope`AtomShape[60]]],DirectedInfinity[1],4,{All}]]],
+4,DirectedInfinity[1],{}]],"InitialType" -> TypeSystem`Assoc[TypeSystem`Atom[String],
+TypeSystem`Struct[{"a","b","c","d"},{TypeSystem`Atom[Real],TypeSystem`Atom[Real],TypeSystem`Atom[
+Real],TypeSystem`Atom[Real]}],4],"Meta" -> Association["ID" -> 10965251210928],"RowTarget" -> 20,
+"ColumnTarget" -> 20,"Shape" -> TypeSystem`PackageScope`HeaderShape[Association[{All,TypeSystem`PackageScope`KeyDummy[
+0]} -> 1,{All,"a"} -> 1,{All,"b"} -> 1,{All,"c"} -> 1,{All,"d"} -> 1],TypeSystem`PackageScope`Limited[
+TypeSystem`PackageScope`ColumnShape[TypeSystem`PackageScope`KeyValueShape[TypeSystem`PackageScope`AtomShape[
+28.800000000000004],TypeSystem`PackageScope`Limited[TypeSystem`PackageScope`RowShape[
+Association["a" -> TypeSystem`PackageScope`AtomShape[60],"b" -> TypeSystem`PackageScope`AtomShape[
+60],"c" -> TypeSystem`PackageScope`AtomShape[60],"d" -> TypeSystem`PackageScope`AtomShape[
+60]]],DirectedInfinity[1],4,{All}]]],4,DirectedInfinity[1],{}]],"Type" -> TypeSystem`Assoc[
+TypeSystem`Atom[String],TypeSystem`Struct[{"a","b","c","d"},{TypeSystem`Atom[Real],TypeSystem`Atom[
+Real],TypeSystem`Atom[Real],TypeSystem`Atom[Real]}],4],"Path" -> {},"BaseIndices" -> {},
+"DisplayedRowCount" -> 4,"DisplayedColumnCount" -> 4,"DataRowCount" -> 4,"DataColumnCount" -> 4,
+"SortPaths" -> {},"SortDirections" -> {},"HiddenItemsMap" -> Null,"UpdateType" -> 1]],Set[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$,"73b7d1a0-a332-495b-b2ac-dca494607fd6"],Set[
+TypeSystem`NestedGrid`PackagePrivate`$path$$,{}],Set[TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+1],Set[TypeSystem`NestedGrid`PackagePrivate`$hPos$$,1],Set[TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+DynamicModule[{Set[TypeSystem`NestedGrid`PackagePrivate`renderedGrid,Deploy[Style[
+Grid[{{Item[Pane[Tooltip[Mouseover[Graphics[{},ImageSize -> 6,BaselinePosition -> Scaled[
+-0.15]],Graphics[{GrayLevel[0.6],Polygon[{{Power[2,Rational[-1,2]],Times[-1,Power[
+2,Rational[-1,2]]]},{Power[2,Rational[-1,2]],Power[2,Rational[-1,2]]},{Times[-1,Power[
+2,Rational[-1,2]]],Power[2,Rational[-1,2]]},{Times[-1,Power[2,Rational[-1,2]]],Times[
+-1,Power[2,Rational[-1,2]]]}}]},ImageSize -> 6,BaselinePosition -> Scaled[-0.15]]],
+Row[{Row[{Style["All",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,
+0.6509803921568628,0.6509803921568628]],Style["Keys",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+ImageSize -> {{1,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[
+0.95],Alignment -> {Left,Baseline}],Item[Pane[Row[{Tooltip[EventHandler[MouseAppearance[
+Mouseover["a",Style["a",FontColor -> RGBColor[0.27450980392156865,0.5372549019607843,
+0.792156862745098]]],"LinkHand"],RuleDelayed[{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+{All,"a"},1]]],Row[{Row[{Style["All",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[
+0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style["a",GrayLevel[0.6]]}]},
+BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]]," ",""}],ImageSize -> {{1,Full},Automatic},
+ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[0.95],Alignment -> {Left,Baseline}],Item[
+Pane[Row[{Tooltip[EventHandler[MouseAppearance[Mouseover["b",Style["b",FontColor -> RGBColor[
+0.27450980392156865,0.5372549019607843,0.792156862745098]]],"LinkHand"],RuleDelayed[
+{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{All,"b"},1]]],Row[{Row[{Style[
+"All",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,
+0.6509803921568628]],Style["b",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]]," ",""}],
+ImageSize -> {{1,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[
+0.95],Alignment -> {Left,Baseline}],Item[Pane[Row[{Tooltip[EventHandler[MouseAppearance[
+Mouseover["c",Style["c",FontColor -> RGBColor[0.27450980392156865,0.5372549019607843,
+0.792156862745098]]],"LinkHand"],RuleDelayed[{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+{All,"c"},1]]],Row[{Row[{Style["All",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[
+0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style["c",GrayLevel[0.6]]}]},
+BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]]," ",""}],ImageSize -> {{1,Full},Automatic},
+ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[0.95],Alignment -> {Left,Baseline}],Item[
+Pane[Row[{Tooltip[EventHandler[MouseAppearance[Mouseover["d",Style["d",FontColor -> RGBColor[
+0.27450980392156865,0.5372549019607843,0.792156862745098]]],"LinkHand"],RuleDelayed[
+{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{All,"d"},1]]],Row[{Row[{Style[
+"All",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,
+0.6509803921568628]],Style["d",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]]," ",""}],
+ImageSize -> {{1,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[
+0.95],Alignment -> {Left,Baseline}]},{Item[Pane[Tooltip[EventHandler[MouseAppearance[
+Mouseover["1",Style["1",FontColor -> RGBColor[0.27450980392156865,0.5372549019607843,
+0.792156862745098]]],"LinkHand"],RuleDelayed[{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+{Key["1"]},1]]],Row[{Row[{Style["1",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+ImageSize -> {{28.800000000000004,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+Background -> GrayLevel[0.95],Alignment -> {Left,Baseline}],Item[Pane[Annotation[
+Tooltip[RawBoxes["88.64"],Row[{Row[{Style["1",GrayLevel[0.6]]}],Row[{Style[" \:203a ",
+RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style["a",GrayLevel[
+0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+{Key["1"],Key["a"]},"Item",False],"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}],Item[Pane[Annotation[Tooltip[RawBoxes["97.5"],Row[{Row[
+{Style["1",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,
+0.6509803921568628]],Style["b",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{Key["1"],Key["b"]},"Item",False],
+"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip[RawBoxes["43.33"],Row[{Row[{Style["1",GrayLevel[0.6]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style[
+"c",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+{Key["1"],Key["c"]},"Item",False],"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}],Item[Pane[Annotation[Tooltip[RawBoxes["58.56"],Row[
+{Row[{Style["1",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,
+0.6509803921568628,0.6509803921568628]],Style["d",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{Key["1"],Key["d"]},"Item",False],
+"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}]},{Item[
+Pane[Tooltip[EventHandler[MouseAppearance[Mouseover["2",Style["2",FontColor -> RGBColor[
+0.27450980392156865,0.5372549019607843,0.792156862745098]]],"LinkHand"],RuleDelayed[
+{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{Key["2"]},1]]],Row[{Row[{Style[
+"2",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],ImageSize -> {{28.800000000000004,Full},Automatic},
+ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[0.95],Alignment -> {Left,Baseline}],Item[
+Pane[Annotation[Tooltip[RawBoxes["86.67"],Row[{Row[{Style["2",GrayLevel[0.6]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style[
+"a",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+{Key["2"],Key["a"]},"Item",False],"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}],Item[Pane[Annotation[Tooltip[RawBoxes["86.65"],Row[
+{Row[{Style["2",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,
+0.6509803921568628,0.6509803921568628]],Style["b",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{Key["2"],Key["b"]},"Item",False],
+"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip[RawBoxes["52"],Row[{Row[{Style["2",GrayLevel[0.6]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style[
+"c",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+{Key["2"],Key["c"]},"Item",False],"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}],Item[Pane[Annotation[Tooltip[RawBoxes["58.56"],Row[
+{Row[{Style["2",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,
+0.6509803921568628,0.6509803921568628]],Style["d",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{Key["2"],Key["d"]},"Item",False],
+"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}]},{Item[
+Pane[Tooltip[EventHandler[MouseAppearance[Mouseover["3",Style["3",FontColor -> RGBColor[
+0.27450980392156865,0.5372549019607843,0.792156862745098]]],"LinkHand"],RuleDelayed[
+{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{Key["3"]},1]]],Row[{Row[{Style[
+"3",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],ImageSize -> {{28.800000000000004,Full},Automatic},
+ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[0.95],Alignment -> {Left,Baseline}],Item[
+Pane[Annotation[Tooltip[RawBoxes["82.39"],Row[{Row[{Style["3",GrayLevel[0.6]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style[
+"a",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+{Key["3"],Key["a"]},"Item",False],"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}],Item[Pane[Annotation[Tooltip[RawBoxes["90"],Row[{Row[
+{Style["3",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,
+0.6509803921568628]],Style["b",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{Key["3"],Key["b"]},"Item",False],
+"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip[RawBoxes["51.5"],Row[{Row[{Style["3",GrayLevel[0.6]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style[
+"c",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+{Key["3"],Key["c"]},"Item",False],"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}],Item[Pane[Annotation[Tooltip[RawBoxes["79.85"],Row[
+{Row[{Style["3",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,
+0.6509803921568628,0.6509803921568628]],Style["d",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{Key["3"],Key["d"]},"Item",False],
+"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}]},{Item[
+Pane[Tooltip[EventHandler[MouseAppearance[Mouseover["4",Style["4",FontColor -> RGBColor[
+0.27450980392156865,0.5372549019607843,0.792156862745098]]],"LinkHand"],RuleDelayed[
+{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{Key["4"]},1]]],Row[{Row[{Style[
+"4",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],ImageSize -> {{28.800000000000004,Full},Automatic},
+ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[0.95],Alignment -> {Left,Baseline}],Item[
+Pane[Annotation[Tooltip[RawBoxes["84.78"],Row[{Row[{Style["4",GrayLevel[0.6]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style[
+"a",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+{Key["4"],Key["a"]},"Item",False],"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}],Item[Pane[Annotation[Tooltip[RawBoxes["91.76"],Row[
+{Row[{Style["4",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,
+0.6509803921568628,0.6509803921568628]],Style["b",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{Key["4"],Key["b"]},"Item",False],
+"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}],Item[
+Pane[Annotation[Tooltip[RawBoxes["54.16"],Row[{Row[{Style["4",GrayLevel[0.6]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style[
+"c",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+{Key["4"],Key["c"]},"Item",False],"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}],Item[Pane[Annotation[Tooltip[RawBoxes["83.65"],Row[
+{Row[{Style["4",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,
+0.6509803921568628,0.6509803921568628]],Style["d",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{Key["4"],Key["d"]},"Item",False],
+"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}]}},
+BaseStyle -> {ContextMenu -> Dynamic[CompoundExpression[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger,
+Which[UnsameQ[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]],{},SameQ[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger,
+TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger],TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu,
+True,CompoundExpression[Set[TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger,
+TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger],Set[TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu,
+Block[{Set[TypeSystem`NestedGrid`PackagePrivate`$globalScrollPos,{TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$}]},
+With[{Set[TypeSystem`NestedGrid`PackagePrivate`lastPath$,TypeSystem`NestedGrid`PackagePrivate`$lastPath],Set[
+TypeSystem`NestedGrid`PackagePrivate`lastPathType$,TypeSystem`NestedGrid`PackagePrivate`$lastPathType],Set[
+TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$,TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader],Set[
+TypeSystem`NestedGrid`PackagePrivate`allHidden$,TypeSystem`NestedGrid`PackagePrivate`allHiddenQ[
+TypeSystem`NestedGrid`PackagePrivate`$lastPath,TypeSystem`NestedGrid`PackagePrivate`$state$$]],Set[
+TypeSystem`NestedGrid`PackagePrivate`anyHidden$,TypeSystem`NestedGrid`PackagePrivate`anyHiddenQ[
+TypeSystem`NestedGrid`PackagePrivate`$lastPath,TypeSystem`NestedGrid`PackagePrivate`$state$$]],Set[
+TypeSystem`NestedGrid`PackagePrivate`sortDirection$,TypeSystem`NestedGrid`PackagePrivate`columnSortDirection[
+TypeSystem`NestedGrid`PackagePrivate`$lastPath,TypeSystem`NestedGrid`PackagePrivate`$state$$[
+"SortPaths"],TypeSystem`NestedGrid`PackagePrivate`$state$$["SortDirections"]]],Set[
+TypeSystem`NestedGrid`PackagePrivate`haveData$,Not[FailureQ[TypeSystem`NestedGrid`PackagePrivate`datasetInitialData[
+TypeSystem`NestedGrid`PackagePrivate`$state$$]]]],Set[TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$,
+Not[FreeQ[TypeSystem`NestedGrid`PackagePrivate`$lastPath,Keys]]]},Join[{If[Or[Not[
+TypeSystem`NestedGrid`PackagePrivate`haveData$],Not[TypeSystem`NestedGrid`PackagePrivate`anyHidden$],
+TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$],Nothing,MenuItem[StringJoin["Show ",
+Which[Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"Item"],"",TypeSystem`NestedGrid`PackagePrivate`allHidden$,
+ToString[ReplaceAll[Last[TypeSystem`NestedGrid`PackagePrivate`lastPath$],RuleDelayed[
+Key[Pattern[TypeSystem`NestedGrid`PackagePrivate`x,Blank[]]],TypeSystem`NestedGrid`PackagePrivate`x]]],
+Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"RowHeader"],"Row",Equal[
+TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"ColumnHeader"],"Column",True,
+""]],KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][TypeSystem`NestedGrid`PackagePrivate`lastPath$,
+"remove"]],MenuEvaluator -> Automatic]],If[Or[Not[TypeSystem`NestedGrid`PackagePrivate`haveData$],
+TypeSystem`NestedGrid`PackagePrivate`pathEmptyQ[TypeSystem`NestedGrid`PackagePrivate`$lastPath,
+TypeSystem`NestedGrid`PackagePrivate`$state$$],TypeSystem`NestedGrid`PackagePrivate`allHidden$,
+TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$],Nothing,MenuItem[StringJoin["Hide ",
+Which[Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"Item"],"",TypeSystem`NestedGrid`PackagePrivate`allHidden$,
+ToString[ReplaceAll[Last[TypeSystem`NestedGrid`PackagePrivate`lastPath$],RuleDelayed[
+Key[Pattern[TypeSystem`NestedGrid`PackagePrivate`x,Blank[]]],TypeSystem`NestedGrid`PackagePrivate`x]]],
+Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"RowHeader"],"Row",Equal[
+TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"ColumnHeader"],"Column",True,
+""]],KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][TypeSystem`NestedGrid`PackagePrivate`lastPath$,
+"add"]],MenuEvaluator -> Automatic]],Delimiter},If[And[TypeSystem`NestedGrid`PackagePrivate`haveData$,
+MatchQ[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,Alternatives["ColumnHeader",
+"KeyDummy"]],TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$,Not[TypeSystem`NestedGrid`PackagePrivate`allHidden$]],
+{If[UnsameQ[TypeSystem`NestedGrid`PackagePrivate`sortDirection$,"Ascending"],MenuItem[
+"Sort",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateSort[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+TypeSystem`NestedGrid`PackagePrivate`lastPath$,"Ascending"]],MenuEvaluator -> Automatic],
+Nothing],If[UnsameQ[TypeSystem`NestedGrid`PackagePrivate`sortDirection$,"Descending"],
+MenuItem["Reverse Sort",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateSort[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][TypeSystem`NestedGrid`PackagePrivate`lastPath$,
+"Descending"]],MenuEvaluator -> Automatic],Nothing],If[UnsameQ[TypeSystem`NestedGrid`PackagePrivate`sortDirection$,
+None],MenuItem["Unsort",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateSort[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][TypeSystem`NestedGrid`PackagePrivate`lastPath$,
+None]],MenuEvaluator -> Automatic],Nothing],Delimiter},{}],{MenuItem["Copy Position to Clipboard",
+KernelExecute[TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[TypeSystem`NestedGrid`PackagePrivate`copyClip]],
+MenuEvaluator -> Automatic],MenuItem["Copy Data to Clipboard",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`copyClip]],
+MenuEvaluator -> Automatic],Delimiter,MenuItem["Paste Position in New Cell",KernelExecute[
+TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[TypeSystem`NestedGrid`PackagePrivate`cellPaste]],
+MenuEvaluator -> Automatic],MenuItem["Paste Data in New Cell",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`cellPaste]],
+MenuEvaluator -> Automatic]}]]]]]]]],FontFamily -> "Verdana",FontSize -> 12},Spacings -> {0,0},
+Alignment -> Left,Dividers -> All,FrameStyle -> GrayLevel[0.7490196078431373],BaseStyle -> {FontFamily -> "Verdana",FontSize -> 12}],
+LineBreakWithin -> False,ContextMenu -> {},NumberMarks -> False,ShowAutoStyles -> False]]],Set[
+TypeSystem`NestedGrid`PackagePrivate`initialQ,True]},Dynamic[TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+TypeSystem`NestedGrid`PackagePrivate`$path$$,CompoundExpression[If[Not[TypeSystem`NestedGrid`PackagePrivate`initialQ],
+Module[{Set[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$,$Failed],Set[TypeSystem`NestedGrid`PackagePrivate`tmpData$,
+TypeSystem`NestedGrid`PackagePrivate`datasetData[TypeSystem`NestedGrid`PackagePrivate`$state$$]]},
+CompoundExpression[Set[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$,If[FailureQ[
+TypeSystem`NestedGrid`PackagePrivate`tmpData$],TypeSystem`NestedGrid`PackagePrivate`renderedGrid,
+TypeSystem`NestedGrid`PackagePrivate`renderGrid[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+TypeSystem`NestedGrid`PackagePrivate`tmpData$]]],If[Not[FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]],
+Set[TypeSystem`NestedGrid`PackagePrivate`renderedGrid,TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]],
+Null]]],Set[TypeSystem`NestedGrid`PackagePrivate`initialQ,False],TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,If[FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid],
+TypeSystem`SparseGrid[TypeSystem`H["(data no longer present)"]],If[GeneralUtilities`$DebugMode,
+Row[{TypeSystem`NestedGrid`PackagePrivate`renderedGrid,"  ",TypeSystem`NestedGrid`PackagePrivate`formatState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$]}],
+TypeSystem`NestedGrid`PackagePrivate`renderedGrid]]]],RuleDelayed[TrackedSymbols,
+{TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$}]],
+RuleDelayed[DynamicModuleValues,{}]]],Set[TypeSystem`NestedGrid`PackagePrivate`$topBar$$,
+Dynamic[TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[TypeSystem`PackageScope`Pathbar[
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]]],RuleDelayed[TrackedSymbols,{TypeSystem`NestedGrid`PackagePrivate`$path$$}]]],Set[
+TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$,Style[Framed[Dynamic[Replace[MouseAnnotation[
+Null],{TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Null,Blank[]] -> "",RuleDelayed[
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Pattern[TypeSystem`NestedGrid`PackagePrivate`path$,
+Blank[]],Pattern[TypeSystem`NestedGrid`PackagePrivate`pathType$,Blank[]],Pattern[
+TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$,Blank[]]],CompoundExpression[Increment[
+TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger],Set[TypeSystem`NestedGrid`PackagePrivate`$lastPath,
+TypeSystem`NestedGrid`PackagePrivate`path$],Set[TypeSystem`NestedGrid`PackagePrivate`$lastPathType,
+TypeSystem`NestedGrid`PackagePrivate`pathType$],Set[TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader,
+TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$],Set[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]],
+TypeSystem`NestedGrid`PackagePrivate`makePathTrail[TypeSystem`NestedGrid`PackagePrivate`path$,
+TypeSystem`NestedGrid`PackagePrivate`makePathElements]]],RuleDelayed[Null,Spacer[
+10]],RuleDelayed[Blank[],Spacer[10]]}],RuleDelayed[TrackedSymbols,{}]],FrameStyle -> None,
+ImageMargins -> 0,FrameMargins -> 0,Alignment -> Top,ImageSize -> {Automatic,15}],
+FontSize -> 1]]},DynamicBox[ToBoxes[Dataset`DatasetContent[1,"Path" -> TypeSystem`NestedGrid`PackagePrivate`$path$$,
+"Grid" -> TypeSystem`NestedGrid`PackagePrivate`releaseLocalHold[TypeSystem`NestedGrid`PackagePrivate`$grid$$],
+"State" -> TypeSystem`NestedGrid`PackagePrivate`$state$$,"VPos" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$vPos$$],
+"HPos" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$hPos$$],"TopBar" -> TypeSystem`NestedGrid`PackagePrivate`$topBar$$,
+"BottomBar" -> TypeSystem`NestedGrid`PackagePrivate`releaseLocalHold[TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]],
+StandardForm],RuleDelayed[TrackedSymbols,{TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$}]],
+RuleDelayed[Initialization,Block[{Set[$ContextPath,$ContextPath]},CompoundExpression[
+Needs["TypeSystem`"],Needs["Dataset`"],Set[TypeSystem`NestedGrid`PackagePrivate`$outputID$$,
+CreateUUID[]]]]],RuleDelayed[DynamicModuleValues,{}],BaseStyle -> {LineBreakWithin -> False},
+ExpressionUUID -> "0dff08aa-b116-4a4b-b0a2-aafe83a6dbfb"],Deploy,DefaultBaseStyle -> "Deploy"],
+Dataset`InterpretDataset[1],Selectable -> False,Editable -> False,SelectWithContents -> True],
+StandardForm],"Output",ExpressionUUID -> "5cc07eb4-d4c3-4292-a122-95ccb511c55e",CellLabel -> "Out[1]= "]},
+Open],ExpressionUUID -> "50c5748a-85c5-4122-8d84-30ca563c4c06"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"outliers"," ","="," ",RowBox[{"FindAnomalies","[","data","]"}]," "}]],
+"Input",ExpressionUUID -> "42b4d7c6-ca45-4f0d-b4d2-e43a59d9ab3f",CellLabel -> "In[5]:= "],Cell[
+BoxData[
+TagBox[TagBox[DynamicModuleBox[{Set[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+Association["InitialData" -> Association["1" -> Association["key1" -> 43.33],"2" -> Association[
+"key1" -> 52],"3" -> Association["key1" -> 51.5],"4" -> Association["key1" -> 54.16]],
+"InitialShape" -> TypeSystem`PackageScope`HeaderShape[Association[{All,TypeSystem`PackageScope`KeyDummy[
+1]} -> 1,{All,"key1"} -> 1],TypeSystem`PackageScope`Limited[TypeSystem`PackageScope`ColumnShape[
+TypeSystem`PackageScope`KeyValueShape[TypeSystem`PackageScope`AtomShape[28.800000000000004],
+TypeSystem`PackageScope`Limited[TypeSystem`PackageScope`RowShape[Association["key1" -> TypeSystem`PackageScope`AtomShape[
+60]]],DirectedInfinity[1],1,{All}]]],4,DirectedInfinity[1],{}]],"InitialType" -> TypeSystem`Assoc[
+TypeSystem`Atom[String],TypeSystem`Struct[{"key1"},{TypeSystem`Atom[Real]}],4],"Meta" -> Association[
+"ID" -> 216595400441773],"RowTarget" -> 20,"ColumnTarget" -> 20,"Shape" -> TypeSystem`PackageScope`HeaderShape[
+Association[{All,TypeSystem`PackageScope`KeyDummy[1]} -> 1,{All,"key1"} -> 1],TypeSystem`PackageScope`Limited[
+TypeSystem`PackageScope`ColumnShape[TypeSystem`PackageScope`KeyValueShape[TypeSystem`PackageScope`AtomShape[
+28.800000000000004],TypeSystem`PackageScope`Limited[TypeSystem`PackageScope`RowShape[
+Association["key1" -> TypeSystem`PackageScope`AtomShape[60]]],DirectedInfinity[1],
+1,{All}]]],4,DirectedInfinity[1],{}]],"Type" -> TypeSystem`Assoc[TypeSystem`Atom[
+String],TypeSystem`Struct[{"key1"},{TypeSystem`Atom[Real]}],4],"Path" -> {},"BaseIndices" -> {},
+"DisplayedRowCount" -> 4,"DisplayedColumnCount" -> 1,"DataRowCount" -> 4,"DataColumnCount" -> 1,
+"SortPaths" -> {},"SortDirections" -> {},"HiddenItemsMap" -> Null,"UpdateType" -> 1]],Set[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$,"664fcae7-d4d1-4575-b185-687cdfd7e3c0"],Set[
+TypeSystem`NestedGrid`PackagePrivate`$path$$,{}],Set[TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+1],Set[TypeSystem`NestedGrid`PackagePrivate`$hPos$$,1],Set[TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+DynamicModule[{Set[TypeSystem`NestedGrid`PackagePrivate`renderedGrid,Deploy[Style[
+Grid[{{Item[Pane[Tooltip[Mouseover[Graphics[{},ImageSize -> 6,BaselinePosition -> Scaled[
+-0.15]],Graphics[{GrayLevel[0.6],Polygon[{{Power[2,Rational[-1,2]],Times[-1,Power[
+2,Rational[-1,2]]]},{Power[2,Rational[-1,2]],Power[2,Rational[-1,2]]},{Times[-1,Power[
+2,Rational[-1,2]]],Power[2,Rational[-1,2]]},{Times[-1,Power[2,Rational[-1,2]]],Times[
+-1,Power[2,Rational[-1,2]]]}}]},ImageSize -> 6,BaselinePosition -> Scaled[-0.15]]],
+Row[{Row[{Style["All",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[0.6509803921568628,
+0.6509803921568628,0.6509803921568628]],Style["Keys",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+ImageSize -> {{1,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[
+0.95],Alignment -> {Left,Baseline}],Item[Pane[Row[{Tooltip[EventHandler[MouseAppearance[
+Mouseover["key1",Style["key1",FontColor -> RGBColor[0.27450980392156865,0.5372549019607843,
+0.792156862745098]]],"LinkHand"],RuleDelayed[{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+{All,"key1"},1]]],Row[{Row[{Style["All",GrayLevel[0.6]]}],Row[{Style[" \:203a ",RGBColor[
+0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style["key1",GrayLevel[
+0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]]," ",""}],ImageSize -> {{1,Full},Automatic},
+ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[0.95],Alignment -> {Left,Baseline}]},{Item[
+Pane[Tooltip[EventHandler[MouseAppearance[Mouseover["1",Style["1",FontColor -> RGBColor[
+0.27450980392156865,0.5372549019607843,0.792156862745098]]],"LinkHand"],RuleDelayed[
+{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{Key["1"]},1]]],Row[{Row[{Style[
+"1",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],ImageSize -> {{28.800000000000004,Full},Automatic},
+ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[0.95],Alignment -> {Left,Baseline}],Item[
+Pane[Annotation[Tooltip[RawBoxes["43.33"],Row[{Row[{Style["1",GrayLevel[0.6]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style[
+"key1",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{Key["1"],Key["key1"]},"Item",
+False],"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}]},{Item[Pane[Tooltip[EventHandler[MouseAppearance[Mouseover[
+"2",Style["2",FontColor -> RGBColor[0.27450980392156865,0.5372549019607843,0.792156862745098]]],
+"LinkHand"],RuleDelayed[{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+{Key["2"]},1]]],Row[{Row[{Style["2",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+ImageSize -> {{28.800000000000004,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+Background -> GrayLevel[0.95],Alignment -> {Left,Baseline}],Item[Pane[Annotation[
+Tooltip[RawBoxes["52"],Row[{Row[{Style["2",GrayLevel[0.6]]}],Row[{Style[" \:203a ",
+RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style["key1",
+GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+{Key["2"],Key["key1"]},"Item",False],"Mouse"],ImageSize -> {{60,Full},Automatic},
+ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}]},{Item[Pane[Tooltip[
+EventHandler[MouseAppearance[Mouseover["3",Style["3",FontColor -> RGBColor[0.27450980392156865,
+0.5372549019607843,0.792156862745098]]],"LinkHand"],RuleDelayed[{"MouseClicked",1},
+TypeSystem`NestedGrid`PackagePrivate`updateState[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{Key["3"]},1]]],Row[{Row[{Style[
+"3",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],ImageSize -> {{28.800000000000004,Full},Automatic},
+ImageMargins -> {{5,3},{4,5}}],Background -> GrayLevel[0.95],Alignment -> {Left,Baseline}],Item[
+Pane[Annotation[Tooltip[RawBoxes["51.5"],Row[{Row[{Style["3",GrayLevel[0.6]]}],Row[
+{Style[" \:203a ",RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style[
+"key1",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{Key["3"],Key["key1"]},"Item",
+False],"Mouse"],ImageSize -> {{60,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+ItemSize -> {Full,Automatic}]},{Item[Pane[Tooltip[EventHandler[MouseAppearance[Mouseover[
+"4",Style["4",FontColor -> RGBColor[0.27450980392156865,0.5372549019607843,0.792156862745098]]],
+"LinkHand"],RuleDelayed[{"MouseClicked",1},TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+{Key["4"]},1]]],Row[{Row[{Style["4",GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],
+ImageSize -> {{28.800000000000004,Full},Automatic},ImageMargins -> {{5,3},{4,5}}],
+Background -> GrayLevel[0.95],Alignment -> {Left,Baseline}],Item[Pane[Annotation[
+Tooltip[RawBoxes["54.16"],Row[{Row[{Style["4",GrayLevel[0.6]]}],Row[{Style[" \:203a ",
+RGBColor[0.6509803921568628,0.6509803921568628,0.6509803921568628]],Style["key1",
+GrayLevel[0.6]]}]},BaseStyle -> {FontFamily -> "Verdana",FontSize -> 9.0}]],TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+{Key["4"],Key["key1"]},"Item",False],"Mouse"],ImageSize -> {{60,Full},Automatic},
+ImageMargins -> {{5,3},{4,5}}],ItemSize -> {Full,Automatic}]}},BaseStyle -> {ContextMenu -> Dynamic[
+CompoundExpression[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger,Which[
+UnsameQ[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]],{},SameQ[TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger,
+TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger],TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu,
+True,CompoundExpression[Set[TypeSystem`NestedGrid`PackagePrivate`$lastContextMenuTrigger,
+TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger],Set[TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu,
+Block[{Set[TypeSystem`NestedGrid`PackagePrivate`$globalScrollPos,{TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$}]},
+With[{Set[TypeSystem`NestedGrid`PackagePrivate`lastPath$,TypeSystem`NestedGrid`PackagePrivate`$lastPath],Set[
+TypeSystem`NestedGrid`PackagePrivate`lastPathType$,TypeSystem`NestedGrid`PackagePrivate`$lastPathType],Set[
+TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$,TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader],Set[
+TypeSystem`NestedGrid`PackagePrivate`allHidden$,TypeSystem`NestedGrid`PackagePrivate`allHiddenQ[
+TypeSystem`NestedGrid`PackagePrivate`$lastPath,TypeSystem`NestedGrid`PackagePrivate`$state$$]],Set[
+TypeSystem`NestedGrid`PackagePrivate`anyHidden$,TypeSystem`NestedGrid`PackagePrivate`anyHiddenQ[
+TypeSystem`NestedGrid`PackagePrivate`$lastPath,TypeSystem`NestedGrid`PackagePrivate`$state$$]],Set[
+TypeSystem`NestedGrid`PackagePrivate`sortDirection$,TypeSystem`NestedGrid`PackagePrivate`columnSortDirection[
+TypeSystem`NestedGrid`PackagePrivate`$lastPath,TypeSystem`NestedGrid`PackagePrivate`$state$$[
+"SortPaths"],TypeSystem`NestedGrid`PackagePrivate`$state$$["SortDirections"]]],Set[
+TypeSystem`NestedGrid`PackagePrivate`haveData$,Not[FailureQ[TypeSystem`NestedGrid`PackagePrivate`datasetInitialData[
+TypeSystem`NestedGrid`PackagePrivate`$state$$]]]],Set[TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$,
+Not[FreeQ[TypeSystem`NestedGrid`PackagePrivate`$lastPath,Keys]]]},Join[{If[Or[Not[
+TypeSystem`NestedGrid`PackagePrivate`haveData$],Not[TypeSystem`NestedGrid`PackagePrivate`anyHidden$],
+TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$],Nothing,MenuItem[StringJoin["Show ",
+Which[Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"Item"],"",TypeSystem`NestedGrid`PackagePrivate`allHidden$,
+ToString[ReplaceAll[Last[TypeSystem`NestedGrid`PackagePrivate`lastPath$],RuleDelayed[
+Key[Pattern[TypeSystem`NestedGrid`PackagePrivate`x,Blank[]]],TypeSystem`NestedGrid`PackagePrivate`x]]],
+Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"RowHeader"],"Row",Equal[
+TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"ColumnHeader"],"Column",True,
+""]],KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][TypeSystem`NestedGrid`PackagePrivate`lastPath$,
+"remove"]],MenuEvaluator -> Automatic]],If[Or[Not[TypeSystem`NestedGrid`PackagePrivate`haveData$],
+TypeSystem`NestedGrid`PackagePrivate`pathEmptyQ[TypeSystem`NestedGrid`PackagePrivate`$lastPath,
+TypeSystem`NestedGrid`PackagePrivate`$state$$],TypeSystem`NestedGrid`PackagePrivate`allHidden$,
+TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$],Nothing,MenuItem[StringJoin["Hide ",
+Which[Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"Item"],"",TypeSystem`NestedGrid`PackagePrivate`allHidden$,
+ToString[ReplaceAll[Last[TypeSystem`NestedGrid`PackagePrivate`lastPath$],RuleDelayed[
+Key[Pattern[TypeSystem`NestedGrid`PackagePrivate`x,Blank[]]],TypeSystem`NestedGrid`PackagePrivate`x]]],
+Equal[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"RowHeader"],"Row",Equal[
+TypeSystem`NestedGrid`PackagePrivate`lastPathType$,"ColumnHeader"],"Column",True,
+""]],KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][TypeSystem`NestedGrid`PackagePrivate`lastPath$,
+"add"]],MenuEvaluator -> Automatic]],Delimiter},If[And[TypeSystem`NestedGrid`PackagePrivate`haveData$,
+MatchQ[TypeSystem`NestedGrid`PackagePrivate`lastPathType$,Alternatives["ColumnHeader",
+"KeyDummy"]],TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$,Not[TypeSystem`NestedGrid`PackagePrivate`allHidden$]],
+{If[UnsameQ[TypeSystem`NestedGrid`PackagePrivate`sortDirection$,"Ascending"],MenuItem[
+"Sort",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateSort[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+TypeSystem`NestedGrid`PackagePrivate`lastPath$,"Ascending"]],MenuEvaluator -> Automatic],
+Nothing],If[UnsameQ[TypeSystem`NestedGrid`PackagePrivate`sortDirection$,"Descending"],
+MenuItem["Reverse Sort",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateSort[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][TypeSystem`NestedGrid`PackagePrivate`lastPath$,
+"Descending"]],MenuEvaluator -> Automatic],Nothing],If[UnsameQ[TypeSystem`NestedGrid`PackagePrivate`sortDirection$,
+None],MenuItem["Unsort",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`updateSort[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][TypeSystem`NestedGrid`PackagePrivate`lastPath$,
+None]],MenuEvaluator -> Automatic],Nothing],Delimiter},{}],{MenuItem["Copy Position to Clipboard",
+KernelExecute[TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[TypeSystem`NestedGrid`PackagePrivate`copyClip]],
+MenuEvaluator -> Automatic],MenuItem["Copy Data to Clipboard",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`copyClip]],
+MenuEvaluator -> Automatic],Delimiter,MenuItem["Paste Position in New Cell",KernelExecute[
+TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[TypeSystem`NestedGrid`PackagePrivate`cellPaste]],
+MenuEvaluator -> Automatic],MenuItem["Paste Data in New Cell",KernelExecute[TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`cellPaste]],
+MenuEvaluator -> Automatic]}]]]]]]]],FontFamily -> "Verdana",FontSize -> 12},Spacings -> {0,0},
+Alignment -> Left,Dividers -> All,FrameStyle -> GrayLevel[0.7490196078431373],BaseStyle -> {FontFamily -> "Verdana",FontSize -> 12}],
+LineBreakWithin -> False,ContextMenu -> {},NumberMarks -> False,ShowAutoStyles -> False]]],Set[
+TypeSystem`NestedGrid`PackagePrivate`initialQ,True]},Dynamic[TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+TypeSystem`NestedGrid`PackagePrivate`$path$$,CompoundExpression[If[Not[TypeSystem`NestedGrid`PackagePrivate`initialQ],
+Module[{Set[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$,$Failed],Set[TypeSystem`NestedGrid`PackagePrivate`tmpData$,
+TypeSystem`NestedGrid`PackagePrivate`datasetData[TypeSystem`NestedGrid`PackagePrivate`$state$$]]},
+CompoundExpression[Set[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$,If[FailureQ[
+TypeSystem`NestedGrid`PackagePrivate`tmpData$],TypeSystem`NestedGrid`PackagePrivate`renderedGrid,
+TypeSystem`NestedGrid`PackagePrivate`renderGrid[TypeSystem`NestedGrid`PackagePrivate`$state$$,
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+TypeSystem`NestedGrid`PackagePrivate`tmpData$]]],If[Not[FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]],
+Set[TypeSystem`NestedGrid`PackagePrivate`renderedGrid,TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]],
+Null]]],Set[TypeSystem`NestedGrid`PackagePrivate`initialQ,False],TypeSystem`NestedGrid`PackagePrivate`$vPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$hPos$$,If[FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid],
+TypeSystem`SparseGrid[TypeSystem`H["(data no longer present)"]],If[GeneralUtilities`$DebugMode,
+Row[{TypeSystem`NestedGrid`PackagePrivate`renderedGrid,"  ",TypeSystem`NestedGrid`PackagePrivate`formatState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$]}],
+TypeSystem`NestedGrid`PackagePrivate`renderedGrid]]]],RuleDelayed[TrackedSymbols,
+{TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$}]],
+RuleDelayed[DynamicModuleValues,{}]]],Set[TypeSystem`NestedGrid`PackagePrivate`$topBar$$,
+Dynamic[TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[TypeSystem`PackageScope`Pathbar[
+TypeSystem`NestedGrid`PackagePrivate`$path$$,TypeSystem`NestedGrid`PackagePrivate`updateState[
+TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$path$$,
+TypeSystem`NestedGrid`PackagePrivate`$vPos$$,TypeSystem`NestedGrid`PackagePrivate`$hPos$$,
+TypeSystem`NestedGrid`PackagePrivate`$grid$$,TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]]],RuleDelayed[TrackedSymbols,{TypeSystem`NestedGrid`PackagePrivate`$path$$}]]],Set[
+TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$,Style[Framed[Dynamic[Replace[MouseAnnotation[
+Null],{TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Null,Blank[]] -> "",RuleDelayed[
+TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[TypeSystem`NestedGrid`PackagePrivate`localHold[
+TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Pattern[TypeSystem`NestedGrid`PackagePrivate`path$,
+Blank[]],Pattern[TypeSystem`NestedGrid`PackagePrivate`pathType$,Blank[]],Pattern[
+TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$,Blank[]]],CompoundExpression[Increment[
+TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger],Set[TypeSystem`NestedGrid`PackagePrivate`$lastPath,
+TypeSystem`NestedGrid`PackagePrivate`path$],Set[TypeSystem`NestedGrid`PackagePrivate`$lastPathType,
+TypeSystem`NestedGrid`PackagePrivate`pathType$],Set[TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader,
+TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$],Set[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID,
+TypeSystem`NestedGrid`PackagePrivate`localHold[TypeSystem`NestedGrid`PackagePrivate`$outputID$$]],
+TypeSystem`NestedGrid`PackagePrivate`makePathTrail[TypeSystem`NestedGrid`PackagePrivate`path$,
+TypeSystem`NestedGrid`PackagePrivate`makePathElements]]],RuleDelayed[Null,Spacer[
+10]],RuleDelayed[Blank[],Spacer[10]]}],RuleDelayed[TrackedSymbols,{}]],FrameStyle -> None,
+ImageMargins -> 0,FrameMargins -> 0,Alignment -> Top,ImageSize -> {Automatic,15}],
+FontSize -> 1]]},DynamicBox[ToBoxes[Dataset`DatasetContent[1,"Path" -> TypeSystem`NestedGrid`PackagePrivate`$path$$,
+"Grid" -> TypeSystem`NestedGrid`PackagePrivate`releaseLocalHold[TypeSystem`NestedGrid`PackagePrivate`$grid$$],
+"State" -> TypeSystem`NestedGrid`PackagePrivate`$state$$,"VPos" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$vPos$$],
+"HPos" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$hPos$$],"TopBar" -> TypeSystem`NestedGrid`PackagePrivate`$topBar$$,
+"BottomBar" -> TypeSystem`NestedGrid`PackagePrivate`releaseLocalHold[TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$]],
+StandardForm],RuleDelayed[TrackedSymbols,{TypeSystem`NestedGrid`PackagePrivate`$state$$,TypeSystem`NestedGrid`PackagePrivate`$grid$$}]],
+RuleDelayed[Initialization,Block[{Set[$ContextPath,$ContextPath]},CompoundExpression[
+Needs["TypeSystem`"],Needs["Dataset`"],Set[TypeSystem`NestedGrid`PackagePrivate`$outputID$$,
+CreateUUID[]]]]],RuleDelayed[DynamicModuleValues,{}],BaseStyle -> {LineBreakWithin -> False},
+ExpressionUUID -> "1f2ebe79-0293-473c-a6e2-f6caf393783a"],Deploy,DefaultBaseStyle -> "Deploy"],
+Dataset`InterpretDataset[1],Selectable -> False,Editable -> False,SelectWithContents -> True],
+StandardForm],"Output",ExpressionUUID -> "852d2ff2-f13a-45ec-bcbf-a478990e13c7",CellLabel -> "Out[5]= "]},
+Open],ExpressionUUID -> "798dbde8-d5b5-473e-bc78-e5e27afce77a"]},Open],ExpressionUUID -> "865fc9da-3daf-4ec8-9334-068bfd994e70"],Cell[
+CellGroupData[
+{Cell[
+TextData[StyleBox[StyleBox[StyleBox["TTest",FontColor -> RGBColor[0.9686274509803922`,
+0.1411764705882353`,0.043137254901960784`]],FontSize -> 24],FontFamily -> "Times New Roman"]],
+"Section",ExpressionUUID -> "02ab4205-2717-471f-be52-5bba2dd7d675"],Cell[
+TextData[
+{StyleBox[RowBox[{" "," "," "}]],StyleBox[StyleBox["A",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["TTest",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["can",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["be",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["run",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["by",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["simply",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["in",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["putting",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["command",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["TTest",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["and",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["argument",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["of",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["dataset",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["you",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["are",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["wanting",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["to",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["test",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+RowBox[{StyleBox[StyleBox[".",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"]}]],StyleBox[StyleBox[
+"In",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["case",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["of",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["running",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["TTest",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["for",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["row",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["1",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["above",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["command",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["would",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["be",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["TTest",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["[{",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+"data",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["[\"",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["1",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["\",\"",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+"a",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["\"],",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["data",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["[\"",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+"1",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["\",\"",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["b",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["\"],",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+"data",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["[\"",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["1",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["\",\"",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+"c",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["\"],",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["data",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["[\"",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+"1",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["\",\"",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["d",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+RowBox[{StyleBox[StyleBox["\"]}].",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"]}]],StyleBox[StyleBox[
+"In",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["this",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["code",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["1",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["is",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["row",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["being",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["tested",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["and",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["letter",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["stands",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["for",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["column",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["of",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["row",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["specific",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["variable",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["is",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["on",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+RowBox[{StyleBox[StyleBox[".",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"]}]],StyleBox[StyleBox[
+"In",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["running",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["these",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["tests",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["there",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["is",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["a",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["problem",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["with",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["four",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["set",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["of",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["data",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+RowBox[{StyleBox[StyleBox[".",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"]}]],StyleBox[StyleBox[
+"The",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["data",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["is",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["irregular",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["in",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["some",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["form",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["most",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["likely",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["due",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["to",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["outlier",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["present",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["in",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["dataset",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["specified",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["by",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["FindAnomalies",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[RowBox[{StyleBox[StyleBox[
+"[]",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"]}]],StyleBox[StyleBox["function",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["in",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox["above",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[
+" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["section",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[RowBox[{StyleBox[StyleBox[
+".",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"]}]],StyleBox[StyleBox["Due",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["tot",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["his",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["irregularity",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["in",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["data",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["the",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["TTest",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["for",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["this",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["set",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["was",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["not",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["able",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox["to",
+FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontSize -> 14],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox["run",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+RowBox[{StyleBox[StyleBox[".",FontSize -> 14],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[" ",FontSize -> 14],FontFamily -> "Times New Roman"]}]]}],"Text",ExpressionUUID -> "7003c4c8-7e16-4fb6-9572-34d4409ef1e9"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox[StyleBox[StyleBox[StyleBox["All",FontVariations -> {Underline -> False}],
+FontWeight -> Bold],FontSize -> 18],FontColor -> RGBColor[0.07450980392156863`,0.07058823529411765`,
+0.07058823529411765`]],FontColor -> RGBColor[0.5803921568627451`,0.5647058823529412`,
+0.5568627450980392`]],FontFamily -> "Times New Roman"],StyleBox[StyleBox[StyleBox[
+StyleBox[StyleBox[StyleBox[" ",FontVariations -> {Underline -> False}],FontWeight -> Bold],
+FontSize -> 18],FontColor -> RGBColor[0.07450980392156863`,0.07058823529411765`,0.07058823529411765`]],
+FontColor -> RGBColor[0.5803921568627451`,0.5647058823529412`,0.5568627450980392`]],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[StyleBox[StyleBox[StyleBox[StyleBox[
+"Diameters",FontVariations -> {Underline -> False}],FontWeight -> Bold],FontSize -> 18],
+FontColor -> RGBColor[0.07450980392156863`,0.07058823529411765`,0.07058823529411765`]],
+FontColor -> RGBColor[0.5803921568627451`,0.5647058823529412`,0.5568627450980392`]],
+FontFamily -> "Times New Roman"],StyleBox[StyleBox[" ",FontVariations -> {Underline -> False}],
+FontWeight -> Bold]}],"Subsubsection",ExpressionUUID -> "51d80020-8df8-4685-81d0-7eb0abeaa33c"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"TTest","[",RowBox[{"{",RowBox[{RowBox[{"data","[",RowBox[
+{"\"1\"",",","\"a\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"1\"",",","\"b\""}],"]"}],",",RowBox[
+{"data","[",RowBox[{"\"1\"",",","\"c\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"1\"",",","\"d\""}],"]"}],",",RowBox[
+{"data","[",RowBox[{"\"2\"",",","\"a\""}],"]"}],","," ",RowBox[{"data","[",RowBox[
+{"\"2\"",",","\"b\""}],"]"}],","," ",RowBox[{"data","[",RowBox[{"\"2\"",",","\"c\""}],"]"}],",",RowBox[
+{"data","[",RowBox[{"\"2\"",",","\"d\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"3\"",",","\"a\""}],"]"}],",",RowBox[
+{"data","[",RowBox[{"\"3\"",",","\"b\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"3\"",",","\"c\""}],"]"}],",",RowBox[
+{RowBox[{"data","[",RowBox[{"\"3\"",",","\"d\""}],"]"}],RowBox[{"data","[",RowBox[
+{"\"4\"",",","\"a\""}],"]"}]}],",",RowBox[{"data","[",RowBox[{"\"4\"",",","\"b\""}],"]"}],",",RowBox[
+{"data","[",RowBox[{"\"4\"",",","\"c\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"4\"",",","\"d\""}],"]"}]}],"}"}],"]"}]],
+"Input",ExpressionUUID -> "597edb8e-aa84-490d-aed6-fd6058d1b864",CellLabel -> "In[16]:= "],Cell[
+BoxData[
+"0.2638799815604289`",StandardForm],"Output",ExpressionUUID -> "bf5618e7-924e-4a17-a3b0-6eebf9a98654",
+CellLabel -> "Out[16]= "]},Open],ExpressionUUID -> "af556ae5-a43b-409f-b80d-b4d79bf1e726"]},
+Open],ExpressionUUID -> "1f576289-b5e1-4bce-8a6c-beed57f03021"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox[StyleBox[StyleBox["Fringe",FontWeight -> Bold],
+FontVariations -> {Underline -> False}],FontSize -> 18],FontFamily -> "Times New Roman"],
+FontColor -> RGBColor[0.11372549019607843`,0.10980392156862745`,0.10980392156862745`]],StyleBox[
+RowBox[{StyleBox[StyleBox[StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontVariations -> {Underline -> False}],
+FontSize -> 18],FontFamily -> "Times New Roman"],FontColor -> RGBColor[0.11372549019607843`,
+0.10980392156862745`,0.10980392156862745`]],StyleBox[StyleBox[StyleBox[StyleBox[StyleBox[
+"=",FontWeight -> Bold],FontVariations -> {Underline -> False}],FontSize -> 18],FontFamily -> "Times New Roman"],
+FontColor -> RGBColor[0.11372549019607843`,0.10980392156862745`,0.10980392156862745`]],StyleBox[
+StyleBox[StyleBox[StyleBox[StyleBox[" ",FontWeight -> Bold],FontVariations -> {Underline -> False}],
+FontSize -> 18],FontFamily -> "Times New Roman"],FontColor -> RGBColor[0.11372549019607843`,
+0.10980392156862745`,0.10980392156862745`]]}]],StyleBox[StyleBox[StyleBox[StyleBox[
+StyleBox["1",FontWeight -> Bold],FontVariations -> {Underline -> False}],FontSize -> 18],
+FontFamily -> "Times New Roman"],FontColor -> RGBColor[0.11372549019607843`,0.10980392156862745`,
+0.10980392156862745`]]}],"Subsection",ExpressionUUID -> "eef41831-48eb-4d72-b556-ebe837ded335"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"TTest","[",RowBox[{"{",RowBox[{RowBox[{"data","[",RowBox[
+{"\"1\"",",","\"a\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"1\"",",","\"b\""}],"]"}],",",RowBox[
+{"data","[",RowBox[{"\"1\"",",","\"c\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"1\"",",","\"d\""}],"]"}]}],"}"}],"]"}]],
+"Input",ExpressionUUID -> "4b77336c-a972-4b21-8f9c-4976c49baabc",CellLabel -> "In[28]:= "],Cell[
+BoxData[
+"0.010822603100192313`",StandardForm],"Output",ExpressionUUID -> "4f6be2d6-40be-40f0-a82b-2d479e6ee150",
+CellLabel -> "Out[28]= "]},Open],ExpressionUUID -> "b1e29968-1349-4152-90f7-6d7cd69ceb1b"]},
+Open],ExpressionUUID -> "1c849516-0fb2-4439-b40d-4b209eb1dd75"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox[StyleBox["Fringe",FontColor -> RGBColor[
+0.12549019607843137`,0.12156862745098039`,0.11764705882352941`]],FontSize -> 18],
+FontFamily -> "Times New Roman"],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[StyleBox[" ",FontColor -> RGBColor[0.12549019607843137`,0.12156862745098039`,
+0.11764705882352941`]],FontSize -> 18],FontFamily -> "Times New Roman"],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox["=",FontColor -> RGBColor[0.12549019607843137`,0.12156862745098039`,
+0.11764705882352941`]],FontSize -> 18],FontFamily -> "Times New Roman"],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",FontColor -> RGBColor[0.12549019607843137`,0.12156862745098039`,
+0.11764705882352941`]],FontSize -> 18],FontFamily -> "Times New Roman"],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox[StyleBox["2",FontColor -> RGBColor[0.12549019607843137`,0.12156862745098039`,
+0.11764705882352941`]],FontSize -> 18],FontFamily -> "Times New Roman"],FontWeight -> Bold]," "}],
+"Subsection",ExpressionUUID -> "ba4cd13d-88e8-4be0-ac18-5adb7a346098"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"TTest","[",RowBox[{"{",RowBox[{RowBox[{"data","[",RowBox[
+{"\"2\"",",","\"a\""}],"]"}],","," ",RowBox[{"data","[",RowBox[{"\"2\"",",","\"b\""}],"]"}],","," ",RowBox[
+{"data","[",RowBox[{"\"2\"",",","\"c\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"2\"",",","\"d\""}],"]"}]}],"}"}],"]"}]],
+"Input",ExpressionUUID -> "da63a5ef-5e6d-44fc-84f2-94ee16a4e13b",CellLabel -> "In[29]:= "],Cell[
+BoxData[
+"0.004467658623483172`",StandardForm],"Output",ExpressionUUID -> "38ae29be-d98a-44c3-a7c9-cd0a3acc62cf",
+CellLabel -> "Out[29]= "]},Open],ExpressionUUID -> "d14a4a81-9fe5-4fa2-b2f4-962c48db8a46"]},
+Open],ExpressionUUID -> "e84a3d65-4fa4-47d3-9e9e-8b949302a729"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox[StyleBox["Fringe",FontColor -> RGBColor[
+0.12549019607843137`,0.12549019607843137`,0.12156862745098039`]],FontWeight -> Bold],
+FontSize -> 18],FontFamily -> "Times New Roman"],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[StyleBox[" ",FontColor -> RGBColor[0.12549019607843137`,0.12549019607843137`,
+0.12156862745098039`]],FontWeight -> Bold],FontSize -> 18],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[StyleBox[StyleBox["=",FontColor -> RGBColor[0.12549019607843137`,0.12549019607843137`,
+0.12156862745098039`]],FontWeight -> Bold],FontSize -> 18],FontFamily -> "Times New Roman"],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",FontColor -> RGBColor[0.12549019607843137`,0.12549019607843137`,
+0.12156862745098039`]],FontWeight -> Bold],FontSize -> 18],FontFamily -> "Times New Roman"]}]],StyleBox[
+StyleBox[StyleBox[StyleBox["3",FontColor -> RGBColor[0.12549019607843137`,0.12549019607843137`,
+0.12156862745098039`]],FontWeight -> Bold],FontSize -> 18],FontFamily -> "Times New Roman"]}],
+"Subsection",ExpressionUUID -> "80065fcc-736a-4e84-a7e9-7db611fef728"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"TTest","[",RowBox[{"{",RowBox[{RowBox[{"data","[",RowBox[
+{"\"3\"",",","\"a\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"3\"",",","\"b\""}],"]"}],",",RowBox[
+{"data","[",RowBox[{"\"3\"",",","\"c\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"3\"",",","\"d\""}],"]"}]}],"}"}],"]"}]],
+"Input",ExpressionUUID -> "c902d8dc-184f-4999-ad44-c156aa923ad6",CellLabel -> "In[30]:= "],Cell[
+BoxData[
+"0.0028841972105472847`",StandardForm],"Output",ExpressionUUID -> "7106485a-b483-440d-8e88-0f1c4f026f91",
+CellLabel -> "Out[30]= "]},Open],ExpressionUUID -> "d17cff96-fa28-4f4f-9e9e-53b434240162"]},
+Open],ExpressionUUID -> "e0d5d334-94c6-458d-9b59-6d52fcb9e673"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox[StyleBox["Fringe",FontColor -> RGBColor[
+0.07450980392156863`,0.07058823529411765`,0.07058823529411765`]],FontSize -> 18],
+FontFamily -> "Times New Roman"],FontWeight -> Bold],StyleBox[RowBox[{StyleBox[StyleBox[
+StyleBox[StyleBox[" ",FontColor -> RGBColor[0.07450980392156863`,0.07058823529411765`,
+0.07058823529411765`]],FontSize -> 18],FontFamily -> "Times New Roman"],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox["=",FontColor -> RGBColor[0.07450980392156863`,0.07058823529411765`,
+0.07058823529411765`]],FontSize -> 18],FontFamily -> "Times New Roman"],FontWeight -> Bold],StyleBox[
+StyleBox[StyleBox[StyleBox[" ",FontColor -> RGBColor[0.07450980392156863`,0.07058823529411765`,
+0.07058823529411765`]],FontSize -> 18],FontFamily -> "Times New Roman"],FontWeight -> Bold]}]],StyleBox[
+StyleBox[StyleBox[StyleBox["4",FontColor -> RGBColor[0.07450980392156863`,0.07058823529411765`,
+0.07058823529411765`]],FontSize -> 18],FontFamily -> "Times New Roman"],FontWeight -> Bold]}],
+"Subsection",ExpressionUUID -> "7d1ee639-576e-4375-8d1a-6252a9882aec"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"TTest","[",RowBox[{"{",RowBox[{RowBox[{"data","[",RowBox[
+{"\"4\"",",","\"a\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"4\"",",","\"b\""}],"]"}],",",RowBox[
+{"data","[",RowBox[{"\"4\"",",","\"c\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"4\"",",","\"d\""}],"]"}]}],"}"}],"]"}]],
+"Input",ExpressionUUID -> "af24b70b-e03d-411e-a9ac-b128371b765b",CellLabel -> "In[8]:= "],Cell[
+BoxData[
+RowBox[{"TTest","[",RowBox[{"{",RowBox[{RowBox[{"data","[",RowBox[{"\"4\"",",","\"a\""}],"]"}],",",RowBox[
+{"data","[",RowBox[{"\"4\"",",","\"b\""}],"]"}],",",RowBox[{"data","[",RowBox[{"\"4\"",",","\"c\""}],"]"}],",",RowBox[
+{"data","[",RowBox[{"\"4\"",",","\"d\""}],"]"}]}],"}"}],"]"}],StandardForm],"Output",
+ExpressionUUID -> "112c4f8f-214d-4647-a019-2d84d6d26d2c",CellLabel -> "Out[8]= "]},
+Open],ExpressionUUID -> "0f49784b-edf6-42a8-9062-d1517a14b382"]},Open],ExpressionUUID -> "801650a7-5886-4540-905d-02ec717d4389"]},
+Open],ExpressionUUID -> "44072530-2ef4-4ed1-b520-1ea8b4bb9d5f"],Cell[
+CellGroupData[
+{Cell[
+TextData[{StyleBox[StyleBox[StyleBox["Analysis",FontFamily -> "Times New Roman"],
+FontSize -> 24],FontColor -> RGBColor[0.9450980392156862`,0.06666666666666667`,0.027450980392156862`]],StyleBox[
+StyleBox[StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 24],FontColor -> RGBColor[
+0.9450980392156862`,0.06666666666666667`,0.027450980392156862`]],StyleBox[StyleBox[
+StyleBox["of",FontFamily -> "Times New Roman"],FontSize -> 24],FontColor -> RGBColor[
+0.9450980392156862`,0.06666666666666667`,0.027450980392156862`]],StyleBox[StyleBox[
+StyleBox[" ",FontFamily -> "Times New Roman"],FontSize -> 24],FontColor -> RGBColor[
+0.9450980392156862`,0.06666666666666667`,0.027450980392156862`]],StyleBox[StyleBox[
+StyleBox["Variance",FontFamily -> "Times New Roman"],FontSize -> 24],FontColor -> RGBColor[
+0.9450980392156862`,0.06666666666666667`,0.027450980392156862`]]}],"Section",ExpressionUUID -> "9aaa8b60-e893-41f4-bcec-73ef12fd7d25"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Variance","[",RowBox[{"{",RowBox[{"88.64",",","97.5",",","43.33",",","58.56",",","86.67",",","86.65",",","52",",","58.56",",","82.39",",","90",",","51.3",",","79.85",",","84.78",",","91.76",",","54.16",",","83.65"}],"}"}],"]"}]],
+"Input",ExpressionUUID -> "6f3b4327-dc12-476c-98d4-8155df90ea0a",CellLabel -> "In[1]:= "],Cell[
+BoxData[
+"318.71622`",StandardForm],"Output",ExpressionUUID -> "3fd88a7e-0864-4d02-bf9d-2ccf57981973",
+CellLabel -> "Out[33]= "]},Open],ExpressionUUID -> "8012e2d7-705a-45db-bd0b-440f0a9bffe7"]},
+Open],ExpressionUUID -> "8cb7f56c-b2e5-4786-ae72-cb330090260b"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "12.1 for Wolfram Cloud 1.54.2 (March 10, 2020)"]
