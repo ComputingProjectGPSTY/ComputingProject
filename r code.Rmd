@@ -100,7 +100,7 @@ plot(a, type = "o", col = "blue", xlab = "Group Number", ylab = "Diameter Measur
 
 Data can be organized in tables
 ```{r}
-read.csv(file = "C:/Users/alexi/Downloads/Biochemlab/Comp Project 2/fringesanddiameters.csv", header = TRUE)
+read.csv(file = "fringesanddiameters.csv", header = TRUE)
 ```
 
 # Analysis of of Data
