@@ -214,3 +214,12 @@ in terms of multi argument functions.Due to the simplified code
 language, in mathematica models can be generated quicker than they
 can be with R as each element does not have to be defined for the
 code to function. 
+
+##Analysis Between R Code and Python
+Both R and Python are open source programming languages which 
+allows for a variety of different programs to interact when 
+analyzing a data set as packages can be downloaded to analyze data
+in a variety of different ways. 
+##Analysis Between Python and Mathematica
+
+##Conclusion 
