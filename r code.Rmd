@@ -96,3 +96,31 @@ a <- averagediameters
 plot(a, type = "o", col = "blue", xlab = "Group Number", ylab = "Diameter Measured in um", main = "Average Diameters of Hair by Group")
 ```
 
+# Data Tables
+
+Data can be organized in tables
+```{r}
+read.csv(file = "C:/Users/alexi/Downloads/Biochemlab/Comp Project 2/fringesanddiameters.csv", header = TRUE)
+```
+
+# Analysis of of Data
+
+Setting up the groups of data
+At this point we have already set up each of the data strings into a single command. We can take these vectors and create combined groups of them.
+```{r}
+fringediameterall <- data.frame(cbind(Firstfringediameterum, Secondfringediameterum, Thirdfringediameterum, Fourthfringediamterum))
+fringediameterall
+summary(fringediameterall) #This shows the mean, median, minimum, and maximums through each of these data sets.
+```
+This can be repeated with the average diameter, however we don't need to put it in a combined group.
+```{r}
+summary(averagediameter)
+```
+We can take ANOVAs for each of these data sets as well.
+```{r}
+ fringediameter<- stack(fringediameterall)
+fringediameter
+Anova_fringediameter <- aov(values ~ ind, data = fringediameter)
+summary(Anova_fringediameter)
+```
+
