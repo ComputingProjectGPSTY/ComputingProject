@@ -46,6 +46,30 @@ Group     Average_Diameter(um)   Color
 5           30.58                red
 6           122.8                red")
 ```
+
+Data vectors for line charts
+```{r}
+Firstfringediameterum <- c(88.64, 975, 43.33, 58.56)
+Firstfringediameterum
+Firstfringedistancecm <- c(2.2, 2.0, 1.5, 1.0)
+Firstfringedistancecm
+Secondfringediameterum <- c(86.67, 86.67, 52.00, 58.56)
+Secondfringediameterum
+Secondfringedistancecm <- c(4.5, 4.5, 2.5, 2.0)
+Secondfringedistancecm
+Thirdfringediameterum <- c(82.39, 90.0, 51.3, 79.85)
+Thirdfringediameterum
+Thirdfringedistancecm <- c(7.1, 6.5, 3.8, 2.2)
+Thirdfringedistancecm
+Fourthfringediamterum <- c(84.78, 91.76, 54.16, 83.65)
+Fourthfringediamterum
+Fourthfringedistancecm <- c(9.2, 8.5, 4.8, 2.8)
+Fourthfringedistancecm
+averagediameters <- c(196.78, 96.4, 161.76, 85.62, 30.58, 122.8)
+averagediameters
+```
+
+
 # Plotting Data 
 
 In the start of analysis, the data of the first data frame is analyzed in a scatter plot. The color of each of the fringes is changed to allow easy comparison.
@@ -65,3 +89,10 @@ ggplot(averagediameter, aes(x = Group, y = Average_Diameter.um.)) +
 ```
 
 This makes it easy to compare which groups worked with which hair color and what their results are compared to each other. 
+
+Data can also be observed in line graphs, but only specific data
+```{r}
+a <- averagediameters
+plot(a, type = "o", col = "blue", xlab = "Group Number", ylab = "Diameter Measured in um", main = "Average Diameters of Hair by Group")
+```
+
