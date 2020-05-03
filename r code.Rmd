@@ -103,7 +103,7 @@ Data can be organized in tables
 read.csv(file = "C:/Users/alexi/Downloads/Biochemlab/Comp Project 2/fringesanddiameters.csv", header = TRUE)
 ```
 
-# Analysis of of Data
+# Analysis of Data
 
 Setting up the groups of data
 At this point we have already set up each of the data strings into a single command. We can take these vectors and create combined groups of them.
@@ -122,5 +122,19 @@ We can take ANOVAs for each of these data sets as well.
 fringediameter
 Anova_fringediameter <- aov(values ~ ind, data = fringediameter)
 summary(Anova_fringediameter)
+Anova_diameteraverages <- aov(Group ~ Average_Diameter.um., data = averagediameter)
+summary(Anova_diameteraverages)
+```
+
+# T Tests for all Data
+In this section t-tests were ran for all of the fringes together, separately and over the averages. These are single sample t tests covering each of the fringes.
+
+```{r}
+t.test(diffractiondata$Diameter.um.)
+t.test(Firstfringediameterum)
+t.test(Secondfringediameterum)
+t.test(Thirdfringediameterum)
+t.test(Fourthfringediamterum)
+t.test(averagediameter$Average_Diameter.um.)
 ```
 
