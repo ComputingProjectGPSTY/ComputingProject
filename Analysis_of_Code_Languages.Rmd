@@ -213,7 +213,7 @@ element by element basis whereas mathematica is more generalized
 in terms of multi argument functions.Due to the simplified code 
 language, in mathematica models can be generated quicker than they
 can be with R as each element does not have to be defined for the
-code to function. 
+code to function making this user friendly coding platform. 
 
 ##Analysis Between R Code and Python
 Both R and Python are open source programming languages which 
