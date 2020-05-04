@@ -248,7 +248,11 @@ seen above. Due to R studios running with the preffered code language of
 R multiple packages were required to be installed to allow the python
 codes to properly run which had to be done through the anaconda prompt
 rather than through Rstudios making python less user friendly in R
-under this specific program. 
+under this specific program. Python however can be translated into
+an R code and typically python has a tidier syntax than R does in term of 
+code languages. In terms of the two plots, the ggplot2 of R is able to be
+customized which is not a feature that is present within matplotlib of python.
+
 ##Analysis Between Python and Mathematica
 
 ##Conclusion 
