@@ -33,7 +33,6 @@ average  79.32        648              N/A")
 Table 1.
 Combined data of all three trials completed
 
-
 ```{r calculations}
 averagediameter <- read.table(header=TRUE, text="
 Group     Average_Diameter(um)   Color
