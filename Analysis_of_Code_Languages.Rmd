@@ -1,0 +1,275 @@
+---
+title: "Analysis_Of_Data_Languages"
+author: "Kayla Tumbaga"
+date: "May 3, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Code
+This first set of data show the individual fringe, diameter, wavelength, and distance.
+```{r}
+diffractiondata <- read.table(header=TRUE, text="
+Fringe   Diameter(um) Wavelength(nm)   Distance(cm)   
+1        88.64        650              2.2
+1        975          650              2.0
+1        43.33        650              1.5
+1        58.56        640              1.0
+2        86.67        650              4.5
+2        86.67        650              4.5
+2        52.00        650              2.5
+2        58.56        640              2.0
+3        82.39        650              7.1
+3        90.0         650              6.5
+3        51.3         650              3.8
+3        79.85        640              2.2
+4        84.78        650              9.2
+4        91.76        650              8.5
+4        54.16        650              4.8
+4        83.65        640              2.8
+average  79.32        648              N/A")    
+```
+
+This second data frame measures the average diameter of each hair color. 
+```{r}
+averagediameter <- read.table(header=TRUE, text="
+Group     Average_Diameter(um)   Color
+1           196.78               brown
+2           96.4                 blonde
+3           161.76               brown
+4           85.62                brown
+5           30.58                red
+6           122.8                red")
+```
+
+Data vectors for line charts
+```{r}
+Firstfringediameterum <- c(88.64, 975, 43.33, 58.56)
+Firstfringediameterum
+Firstfringedistancecm <- c(2.2, 2.0, 1.5, 1.0)
+Firstfringedistancecm
+Secondfringediameterum <- c(86.67, 86.67, 52.00, 58.56)
+Secondfringediameterum
+Secondfringedistancecm <- c(4.5, 4.5, 2.5, 2.0)
+Secondfringedistancecm
+Thirdfringediameterum <- c(82.39, 90.0, 51.3, 79.85)
+Thirdfringediameterum
+Thirdfringedistancecm <- c(7.1, 6.5, 3.8, 2.2)
+Thirdfringedistancecm
+Fourthfringediamterum <- c(84.78, 91.76, 54.16, 83.65)
+Fourthfringediamterum
+Fourthfringedistancecm <- c(9.2, 8.5, 4.8, 2.8)
+Fourthfringedistancecm
+averagediameters <- c(196.78, 96.4, 161.76, 85.62, 30.58, 122.8)
+averagediameters
+```
+
+
+# Plotting Data 
+
+In the start of analysis, the data of the first data frame is analyzed in a scatter plot. The color of each of the fringes is changed to allow easy comparison.
+
+```{r}
+library(ggplot2)
+ggplot(diffractiondata, aes(x = Distance.cm., y = Diameter.um.)) + 
+  geom_point(aes(color = factor(Fringe)))
+```
+
+This same comparison can be drawn for the second data frame which brings into question the actually hair colors.
+
+```{r}
+library(ggplot2)
+ggplot(averagediameter, aes(x = Group, y = Average_Diameter.um.)) +
+  geom_point(aes(color = factor(Color)))
+```
+
+This makes it easy to compare which groups worked with which hair color and what their results are compared to each other. 
+
+Data can also be observed in line graphs, but only specific data
+```{r}
+a <- averagediameters
+plot(a, type = "o", col = "blue", xlab = "Group Number", ylab = "Diameter Measured in um", main = "Average Diameters of Hair by Group")
+```
+
+# Data Tables
+
+Data can be organized in tables
+```{r}
+read.csv(file = "fringesanddiameters.csv", header = TRUE)
+```
+
+# Analysis of of Data
+
+Setting up the groups of data
+At this point we have already set up each of the data strings into a single command. We can take these vectors and create combined groups of them.
+```{r}
+fringediameterall <- data.frame(cbind(Firstfringediameterum, Secondfringediameterum, Thirdfringediameterum, Fourthfringediamterum))
+fringediameterall
+summary(fringediameterall) #This shows the mean, median, minimum, and maximums through each of these data sets.
+```
+This can be repeated with the average diameter, however we don't need to put it in a combined group.
+```{r}
+summary(averagediameter)
+```
+We can take ANOVAs for each of these data sets as well.
+```{r}
+ fringediameter<- stack(fringediameterall)
+fringediameter
+Anova_fringediameter <- aov(values ~ ind, data = fringediameter)
+summary(Anova_fringediameter)
+```
+
+
+##Python Code
+This file was written to code different processes such as calculating averages, creating boxplots, and performing an ANOVA. Notable tables can be seen below.
+
+Table 1. Combined data of all trials completed
+
+diffractiondata = read.table(header=TRUE, text="
+Fringe   Diameter(um) Wavelength(nm)   Distance(cm)   
+1        88.64        650              2.2
+1        975          650              2.0
+1        43.33        650              1.5
+1        58.56        640              1.0
+2        86.67        650              4.5
+2        86.67        650              4.5
+2        52.00        650              2.5
+2        58.56        640              2.0
+3        82.39        650              7.1
+3        90.0         650              6.5
+3        51.3         650              3.8
+3        79.85        640              2.2
+4        84.78        650              9.2
+4        91.76        650              8.5
+4        54.16        650              4.8
+4        83.65        640              2.8
+average  79.32        648              N/A") 
+
+Table 2. Average Diameter by Hair Color
+ 
+Group     Average Diameter(um)   Color
+1           196.78               brown
+2           96.4                 blonde
+3           161.76               brown
+4           85.62                brown
+5           30.58                red
+6           122.8                red")
+
+Code Block 1 - Averages Diameters of Fringe 1
+```{python}
+def avg(numList):
+    avg = sum(numList) / len(numList)
+    return avg
+
+Fringe1 = [88, 975, 43.33, 58.56]
+print(avg(Fringe1))
+```
+
+Code Block 2 - Averages Diameters of Fringe 2
+```{python}
+def avg(numList):
+    avg = sum(numList) / len(numList)
+    return avg
+
+Fringe2 = [86.67, 86.67,52, 58.56]
+print(avg(Fringe2))
+```
+
+Code Block 3 - Averages Diameters of Fringe 3
+```{python}
+def avg(numList):
+    avg = sum(numList) / len(numList)
+    return avg
+
+Fringe3 = [82.39, 90, 51.3, 79.85]
+print(avg(Fringe3))
+```
+
+Code Block 4 - Averages Diameters of Fringe 4
+```{python}
+def avg(numList):
+    avg = sum(numList) / len(numList)
+    return avg
+
+Fringe4 = [84.78, 91.76, 54.16, 83.65]
+print(avg(Fringe4))
+```
+
+Code Block 5 - Creates a png File of a Boxplot
+```{python}
+import matplotlib as mpl 
+mpl.use('agg')
+import matplotlib.pyplot as plt 
+Fringe1 = (88, 975, 43.33, 58.56)
+Fringe2 = (86.67, 86.67,52, 58.56)
+Fringe3 = (82.39, 90, 51.3, 79.85)
+Fringe4 = (84.78, 91.76, 54.16, 83.65)
+data_to_plot = [Fringe1, Fringe2, Fringe3, Fringe4]
+fig = plt.figure(1, figsize=(9, 6))
+ax = fig.add_subplot(111)
+boxplot = ax.boxplot(data_to_plot)
+fig.savefig('fig1.png', bbox_inches='tight')
+```
+
+Code Block 6 - Gives ANOVA Table Between The Different Fringes
+```{python}
+import statsmodels.api as sm 
+from statsmodels.formula.api import ols
+import pandas as pd
+datafile = "DiffractionDataTable1.csv"
+data = pd.read_csv(datafile)
+mod = ols('Fringe ~ Diameter', data=data).fit()
+aov_table = sm.stats.anova_lm(mod, typ=2)
+print(aov_table)
+```
+
+
+##Mathematica Coding
+This file will contain the URL for the completed mathematica coding. 
+This is in order to allow this file to be easily viewed in its entirety.
+URL: https://www.wolframcloud.com/obj/eee32802-7a0e-4018-bc3e-50b66f126d4e
+
+##Analysis Between R Code and Mathematica
+Using R coding rather than Mathematica the information gathered
+experimentally can by kept in a tidy data format with a clear way
+of identifying the data sets that are being analyzed. In
+mathematica the table which contains the data set is unclear as to
+what data is being analyzed. Mathematica however allows one to mix
+symbollic and numberical calculations in their data sets and by
+having fewer abbreviated commands the code is more readable.
+However, R allows for interaction with a variety of different
+programs as there is a variety of different programs that can be
+downloaded from the open source network of R that allows for
+further data analysis such as ggplot2. R tends to run on an
+element by element basis whereas mathematica is more generalized
+in terms of multi argument functions.Due to the simplified code 
+language, in mathematica models can be generated quicker than they
+can be with R as each element does not have to be defined for the
+code to function making this a user friendly coding platform. 
+
+##Analysis Between R Code and Python
+Both R and Python are open source programming languages which 
+allows for a variety of different programs to interact when 
+analyzing a data set as packages can be downloaded to analyze data
+in a variety of different ways. Python for the most part relys on 
+Pandas when programming to conduct the work. Pandas is an open source
+data analysis and manipulation tool that is built onto the python 
+language. However, both R and Python data languages can use 
+anaconda/miniconda as a package manager but if a package is not
+downloaded from the anaconda prompt typically CRAN is used as the 
+package manager for python which is seen for the reticulate package 
+seen above. Due to R studios running with the preffered code language of
+R multiple packages were required to be installed to allow the python
+codes to properly run which had to be done through the anaconda prompt
+rather than through Rstudios making python less user friendly in R
+under this specific program. Python however can be translated into
+an R code and typically python has a tidier syntax than R does in term of 
+code languages. In terms of the two plots, the ggplot2 of R is able to be
+customized which is not a feature that is present within matplotlib of python.
+
+##Analysis Between Python and Mathematica
+
+##Conclusion 

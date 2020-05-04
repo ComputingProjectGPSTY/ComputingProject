@@ -10,25 +10,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-Test file
+This file was written to code different processes such as calculating averages, creating boxplots, and performing an ANOVA. Notable tables can be seen below.
 
 Table 1. Combined data of all trials completed
 
@@ -52,48 +34,90 @@ Fringe   Diameter(um) Wavelength(nm)   Distance(cm)
 4        83.65        640              2.8
 average  79.32        648              N/A") 
 
-```{python}
-def avg(numList):
-    avg = sum(numList) / len(numList)
-    return avg
+Table 2. Average Diameter by Hair Color
+ 
+Group     Average Diameter(um)   Color
+1           196.78               brown
+2           96.4                 blonde
+3           161.76               brown
+4           85.62                brown
+5           30.58                red
+6           122.8                red")
 
-DataSetA = [88, 975, 43.33, 58.56]
-print(avg(DataSetA))
-```
-
-```{python}
-def avg(numList):
-    avg = sum(numList) / len(numList)
-    return avg
-
-DataSetB = [86.67, 86.67,52, 58.56]
-print(avg(DataSetB))
-```
+Code Block 1 - Averages Diameters of Fringe 1
 
 ```{python}
 def avg(numList):
     avg = sum(numList) / len(numList)
     return avg
 
-DataSetC = [82.39, 90, 51.3, 79.85]
-print(avg(DataSetC))
+Fringe1 = [88, 975, 43.33, 58.56]
+print(avg(Fringe1))
 ```
+
+Code Block 2 - Averages Diameters of Fringe 2
 
 ```{python}
 def avg(numList):
     avg = sum(numList) / len(numList)
     return avg
 
-DataSetD = [84.78, 91.76, 54.16, 83.65]
-print(avg(DataSetD))
+Fringe2 = [86.67, 86.67,52, 58.56]
+print(avg(Fringe2))
 ```
-d = read.table(header=TRUE, text="
-A	    B	    C	    D
-88	  86.67	82.39	84.78
-975	  86.67	90.0	91.76
-43.33	52	  51.3	54.16
-58.56	58.56	79.85	83.65
+
+Code Block 3 - Averages Diameters of Fringe 3
 
 ```{python}
-d.boxplot(column=['A', 'B', 'C', 'D'], grid=False)
+def avg(numList):
+    avg = sum(numList) / len(numList)
+    return avg
+
+Fringe3 = [82.39, 90, 51.3, 79.85]
+print(avg(Fringe3))
+```
+
+Code Block 4 - Averages Diameters of Fringe 4
+
+```{python}
+def avg(numList):
+    avg = sum(numList) / len(numList)
+    return avg
+
+Fringe4 = [84.78, 91.76, 54.16, 83.65]
+print(avg(Fringe4))
+```
+
+Code Block 5 - Creates a png File of a Boxplot
+
+```{python}
+import matplotlib as mpl 
+mpl.use('agg')
+import matplotlib.pyplot as plt 
+Fringe1 = (88, 975, 43.33, 58.56)
+Fringe2 = (86.67, 86.67,52, 58.56)
+Fringe3 = (82.39, 90, 51.3, 79.85)
+Fringe4 = (84.78, 91.76, 54.16, 83.65)
+data_to_plot = [Fringe1, Fringe2, Fringe3, Fringe4]
+fig = plt.figure(1, figsize=(9, 6))
+ax = fig.add_subplot(111)
+boxplot = ax.boxplot(data_to_plot)
+ax.set_title('Boxplot of Diameters by Fringe')
+ax.set_xticklabels(['Fringe 1', 'Fringe 2', 'Fringe 3', 'Fringe 4'])
+ax.set_ylabel('Diameter (um)')
+fig.savefig('fig1.png', bbox_inches='tight')
+```
+
+
+Code Block 6 - Gives ANOVA Table Between The Different Fringes
+
+```{python}
+import statsmodels.api as sm 
+from statsmodels.formula.api import ols
+import pandas as pd
+datafile = "DiffractionDataTable1.csv"
+data = pd.read_csv(datafile)
+mod = ols('Fringe ~ Diameter', data=data).fit()
+aov_table = sm.stats.anova_lm(mod, typ=2)
+print(aov_table)
 ```
