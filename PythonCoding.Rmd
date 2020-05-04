@@ -88,14 +88,20 @@ print(avg(Fringe4))
 ```
 
 ```{python}
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-datafile = "DiffractionDataTable1.csv"
-data = pd.read_csv(datafile)
-data.boxplot(column=['Fringe'], figsize=(12, 8))
-plt.show
+import matplotlib as mpl 
+mpl.use('agg')
+import matplotlib.pyplot as plt 
+Fringe1 = (88, 975, 43.33, 58.56)
+Fringe2 = (86.67, 86.67,52, 58.56)
+Fringe3 = (82.39, 90, 51.3, 79.85)
+Fringe4 = (84.78, 91.76, 54.16, 83.65)
+data_to_plot = [Fringe1, Fringe2, Fringe3, Fringe4]
+fig = plt.figure(1, figsize=(9, 6))
+ax = fig.add_subplot(111)
+boxplot = ax.boxplot(data_to_plot)
+fig.savefig('fig1.png', bbox_inches='tight')
 ```
+
 
 ```{python}
 import statsmodels.api as sm 
