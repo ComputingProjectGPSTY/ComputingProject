@@ -231,7 +231,9 @@ code to function making this a user friendly coding platform.
 Both R and Python are open source programming languages which 
 allows for a variety of different programs to interact when 
 analyzing a data set as packages can be downloaded to analyze data
-in a variety of different ways. 
+in a variety of different ways. Python for the most part relys on Pandas when 
+programming to conduct the work. Pandas is an open source data analysis and manipulation 
+tool that is built onto the python language. However, both R and Python data languages can use anaconda/miniconda as a package manager but if a package is not downloaded from the anaconda prompt typically CRAN is used as the package manager for python which is seen for the reticulate package seen above. 
 ##Analysis Between Python and Mathematica
 
 ##Conclusion 
