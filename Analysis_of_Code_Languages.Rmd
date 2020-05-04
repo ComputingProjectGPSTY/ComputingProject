@@ -271,5 +271,30 @@ code languages. In terms of the two plots, the ggplot2 of R is able to be
 customized which is not a feature that is present within matplotlib of python.
 
 ##Analysis Between Python and Mathematica
+Using python rather than mathematica is particularly useful as python 
+utilizes a variety of different programs that are downloaded using a package
+manager to conduct statistical analysis of a data frame. Python use graphical
+representations similar to mathematica essentially acheiving the same
+functionalities.The advantage of mathematica is that the overall function
+is documented and integrated in one place rather than the multiple
+areas of documentation provided from the open source network of python.
+Mathematica also offers a neat, easy to read code that python does not
+making mathematica more user friendly than python.The biggest downside to 
+using mathematica is that data cannot be compiled as it can be using python.
+Mathematica is superior in terms of numerical data however, python is 
+better for the symbollic portion of a data set.
 
 ##Conclusion 
+Arguably mathematica is the most user friendly of the three code languages
+analyzed as mathematica uses a code that is short and easy to read
+whereas, python and R often integrate other program and require
+defining of the elements within the argument to run a code block. 
+However, in terms of statistical analysis python is able to repeat the 
+functions of mathematica using a variety of statistical packages
+and it is able to compile the results in one file which cannot be done using
+mathematica. WHile R and python are both open-source networks, within 
+Rstudio coding in R is typically more user friendly and preferred due to 
+having to use an external package manager when coding in python for chunks
+to properly run. However, for data analysis python may be preferred over R
+because python is able to compile data in a tidier syntax than R which can
+be attributed to the fact that R runs on an element by element basis. 
