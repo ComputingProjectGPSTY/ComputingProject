@@ -124,6 +124,8 @@ summary(Anova_fringediameter)
 
 
 ##Python Code
+This file was written to code different processes such as calculating averages, creating boxplots, and performing an ANOVA. Notable tables can be seen below.
+
 Table 1. Combined data of all trials completed
 
 diffractiondata = read.table(header=TRUE, text="
@@ -146,6 +148,17 @@ Fringe   Diameter(um) Wavelength(nm)   Distance(cm)
 4        83.65        640              2.8
 average  79.32        648              N/A") 
 
+Table 2. Average Diameter by Hair Color
+ 
+Group     Average Diameter(um)   Color
+1           196.78               brown
+2           96.4                 blonde
+3           161.76               brown
+4           85.62                brown
+5           30.58                red
+6           122.8                red")
+
+Code Block 1 - Averages Diameters of Fringe 1
 ```{python}
 def avg(numList):
     avg = sum(numList) / len(numList)
@@ -155,6 +168,7 @@ Fringe1 = [88, 975, 43.33, 58.56]
 print(avg(Fringe1))
 ```
 
+Code Block 2 - Averages Diameters of Fringe 2
 ```{python}
 def avg(numList):
     avg = sum(numList) / len(numList)
@@ -164,6 +178,7 @@ Fringe2 = [86.67, 86.67,52, 58.56]
 print(avg(Fringe2))
 ```
 
+Code Block 3 - Averages Diameters of Fringe 3
 ```{python}
 def avg(numList):
     avg = sum(numList) / len(numList)
@@ -173,6 +188,7 @@ Fringe3 = [82.39, 90, 51.3, 79.85]
 print(avg(Fringe3))
 ```
 
+Code Block 4 - Averages Diameters of Fringe 4
 ```{python}
 def avg(numList):
     avg = sum(numList) / len(numList)
@@ -182,6 +198,7 @@ Fringe4 = [84.78, 91.76, 54.16, 83.65]
 print(avg(Fringe4))
 ```
 
+Code Block 5 - Creates a png File of a Boxplot
 ```{python}
 import matplotlib as mpl 
 mpl.use('agg')
@@ -197,7 +214,7 @@ boxplot = ax.boxplot(data_to_plot)
 fig.savefig('fig1.png', bbox_inches='tight')
 ```
 
-
+Code Block 6 - Gives ANOVA Table Between The Different Fringes
 ```{python}
 import statsmodels.api as sm 
 from statsmodels.formula.api import ols
