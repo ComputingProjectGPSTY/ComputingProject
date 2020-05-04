@@ -151,8 +151,8 @@ def avg(numList):
     avg = sum(numList) / len(numList)
     return avg
 
-DataSetA = [88, 975, 43.33, 58.56]
-print(avg(DataSetA))
+Fringe1 = [88, 975, 43.33, 58.56]
+print(avg(Fringe1))
 ```
 
 ```{python}
@@ -160,8 +160,8 @@ def avg(numList):
     avg = sum(numList) / len(numList)
     return avg
 
-DataSetB = [86.67, 86.67,52, 58.56]
-print(avg(DataSetB))
+Fringe2 = [86.67, 86.67,52, 58.56]
+print(avg(Fringe2))
 ```
 
 ```{python}
@@ -169,8 +169,8 @@ def avg(numList):
     avg = sum(numList) / len(numList)
     return avg
 
-DataSetC = [82.39, 90, 51.3, 79.85]
-print(avg(DataSetC))
+Fringe3 = [82.39, 90, 51.3, 79.85]
+print(avg(Fringe3))
 ```
 
 ```{python}
@@ -178,19 +178,31 @@ def avg(numList):
     avg = sum(numList) / len(numList)
     return avg
 
-DataSetD = [84.78, 91.76, 54.16, 83.65]
-print(avg(DataSetD))
+Fringe4 = [84.78, 91.76, 54.16, 83.65]
+print(avg(Fringe4))
 ```
-d = read.table(header=TRUE, text="
-A	    B	    C	    D
-88	  86.67	82.39	84.78
-975	  86.67	90.0	91.76
-43.33	52	  51.3	54.16
-58.56	58.56	79.85	83.65
 
 ```{python}
-d.boxplot(column=['A', 'B', 'C', 'D'], grid=False)
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+datafile = "DiffractionDataTable1.csv"
+data = pd.read_csv(datafile)
+data.boxplot(column=['Fringe'], figsize=(12, 8))
+plt.show
 ```
+
+```{python}
+import statsmodels.api as sm 
+from statsmodels.formula.api import ols
+import pandas as pd
+datafile = "DiffractionDataTable1.csv"
+data = pd.read_csv(datafile)
+mod = ols('Fringe ~ Diameter', data=data).fit()
+aov_table = sm.stats.anova_lm(mod, typ=2)
+print(aov_table)
+```
+
 
 ##Mathematica Coding
 This file will contain the URL for the completed mathematica coding. 
@@ -213,7 +225,7 @@ element by element basis whereas mathematica is more generalized
 in terms of multi argument functions.Due to the simplified code 
 language, in mathematica models can be generated quicker than they
 can be with R as each element does not have to be defined for the
-code to function making this user friendly coding platform. 
+code to function making this a user friendly coding platform. 
 
 ##Analysis Between R Code and Python
 Both R and Python are open source programming languages which 
