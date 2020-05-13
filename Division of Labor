@@ -1,7 +1,12 @@
 This will be the file where each member describes what they will do/have done in this project.
+
 Alexis Gilliam: R Coding, email for help
 Miranda Plaster: Data Contribution, Mathematica Coding
-Data-
+Nick Sitter: Python Coding, GitHub Work
+Kayla Tumbaga: Data Contribution, contrasting the three data analysis languages, GitHub Work
+Gavin Yoesting: Contrasting/review data analysis languages, Data Contribution
+
+Miranda's Data-
 equation used: d=mλ*(x/y)
 Fringe (m) = {1, 2, 3, 4}
 λ = 0.65um (650nm)
@@ -10,14 +15,7 @@ distance (y) = {1.5cm, 2.5cm, 3.8cm, 4.8cm}
 diameter = {43.33um, 52um, 51.3um, 54.16um} 
 Average diameter= 50.2um
 
-Nick Sitter: Python Coding
-Kayla Tumbaga: Data Contribution, contrasting the three data analysis languages
-Gavin Yoesting:Constrasting between data analysis languages
-
-#Gavin's Division of Labor
-I have submitted my diffraction lab data to be analyzed by the three program: R, Mathematica, and Python. Once each program has a running code, I will be contrasting the data analysis languages. I will also be comparing how accessible and user friendly each program is with the given data.
-
-#Gavin's Data
+Gavin's Data
 Gavin's Diffraction Lab
 fringe     distance (cm)    diameter (nm)
 1          2                975000.0
